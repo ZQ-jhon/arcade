@@ -56,13 +56,14 @@ This course is currently in beta - this means that it is likely to have bugs and
 
 * [Intro](/courses/csintro2/tilemap/intro)
 * [Interactions](/courses/csintro2/tilemap/interactions)
-* [Using Corgi Extension](/courses/csintro2/tilemap/extensions)
+* [Using Corgio Extension](/courses/csintro2/tilemap/extensions)
 * [Project](/courses/csintro2/tilemap/project)
 
 ### [Logic](/courses/csintro2/logic)
 
 * [Introduction](/courses/csintro2/logic/intro)
 * [If and Else](/courses/csintro2/logic/if-else)
+* [Multiplayer](/courses/csintro2/logic/multiplayer)
 * [Booleans](/courses/csintro2/logic/booleans)
 * [Validating User Input](/courses/csintro2/logic/user-input)
 * [Logic in Loops](/courses/csintro2/logic/while)

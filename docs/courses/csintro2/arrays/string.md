@@ -56,19 +56,13 @@ mySprite.say(text_list[3], 300)
 pause(400)
 ```
 
-### ~hint
-
-You will likely notice some redundancy in this code - each pair of ``||sprites:say||`` and ``||loops:pause||`` is different only in the index which the princess is saying.
-
-### ~
-
-## Student Task #1a: Fix the redundancy
+## Student Task #1a: Fix the Redundancy
 
 1. Start with the code from example #1
 2. Use a ``||loops:for index from 0 to 3||`` loop to reduce the redundancy found in the example, without changing the behavior of the code
 3. Add (at least) three more strings to the ``||variables:text list||`` array, describing what she had for lunch 
-4. Use the ``||array:length of array||`` block to change the bound of the loop, so that it will loop through the entire array no matter the size. Remember to pay attention to difference between the length of the array, and the last valid index
-5. **Challenge:** after the princess has given her speech, make her say it again backwards. You may find ``||array:reverse list||`` useful for completing this task
+4. Use the ``||arrays:length of array||`` block to change the bound of the loop, so that it will loop through the entire array no matter the size. Remember to pay attention to difference between the length of the array, and the last valid index
+5. **Challenge:** after the princess has given her speech, make her say it again backwards. You may find ``||arrays:reverse list||`` useful for completing this task
 
 ### ~hint
 
@@ -92,13 +86,13 @@ In Blocks, this is the ``||loops:for element||`` loop, but the behavior is often
 
 1. Start with the code from task #1a
 2. Replace the ``||loops:for index from 0 to||`` loop with a ``||loops:for element||`` loop. Be sure that it refers to the correct array
-3. Replace the ``||array:text list get value at index||`` with the ``||variables:value||`` parameter of the ``||loops:for element||`` loop
+3. Replace the ``||arrays:text list get value at index||`` with the ``||variables:value||`` parameter of the ``||loops:for element||`` loop
 
 ## Concept: Random Reactions
 
 Another way in which you can use string arrays in your games is to create reactions to different events - for example, the player running into another character, or losing a life. This can be used both to personalize your game, and to make the game feel more alive, as the characters respond 'randomly' to the player's actions.
 
-## Example #2: Reacting to collisions
+## Example #2: Reacting to Collisions
 
 1. Review the code below
 2. Create the sample code and run the code
@@ -165,10 +159,10 @@ controller.controlSprite(mySprite, 100, 100)
 text_list = ["oww", "no walls", "oh no", "I stubbed my toe"]
 ```
 
-## Student Task #2: Respond to loss of health
+## Student Task #2: Respond to Loss of Health
 
 1. Start with the code from example #2
-2. Create another ``||array:text list||``, stored in a different variable called "enemyScript". Fill it with the following strings:
+2. Create another ``||arrays:text list||``, stored in a different variable called "enemyScript". Fill it with the following strings:
     * "go away"
     * "why are you running into me"
     * "leave"
@@ -191,6 +185,6 @@ corgio
 ## What did we learn?
 
 1. What is the difference between a ``||loops:for index from 0 to||`` and a ``||loops:for element||`` loop? Can you think of any situations where you might prefer the ``||loops:for index from 0 to||`` loop when using arrays?
-2. In task #1a, why did we use the ``||array:length of array||`` instead of just setting it to the new length (for example, changing it to be from `0 to 3` to `0 to 6`)?
+2. In task #1a, why did we use the ``||arrays:length of array||`` instead of just setting it to the new length (for example, changing it to be from `0 to 3` to `0 to 6`)?
 
 ### [Teacher Material](/courses/csintro2/about/teachers)
