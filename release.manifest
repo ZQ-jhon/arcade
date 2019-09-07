@@ -1,0 +1,72 @@
+CACHE MANIFEST
+
+CACHE:
+/arcade/semantic.js
+/arcade/main.js
+/arcade/pxtapp.js
+/arcade/typescript.js
+/arcade/marked/marked.min.js
+/arcade/highlight.js/highlight.pack.js
+/arcade/jquery.js
+/arcade/pxtlib.js
+/arcade/pxtcompiler.js
+/arcade/pxtblockly.js
+/arcade/pxtwinrt.js
+/arcade/pxteditor.js
+/arcade/pxtsim.js
+/arcade/pxtembed.js
+/arcade/pxtworker.js
+/arcade/pxtweb.js
+/arcade/blockly.css
+/arcade/semantic.css
+/arcade/rtlsemantic.css
+
+
+
+
+
+# blockly
+/arcade/blockly/media/sprites.png
+/arcade/blockly/media/click.mp3
+/arcade/blockly/media/disconnect.wav
+/arcade/blockly/media/delete.mp3
+
+# monaco; keep in sync with webapp/public/index.html
+/arcade/vs/loader.js
+/arcade/vs/base/worker/workerMain.js
+/arcade/vs/basic-languages/src/bat.js
+/arcade/vs/basic-languages/src/cpp.js
+/arcade/vs/editor/editor.main.css
+/arcade/vs/editor/editor.main.js
+/arcade/vs/editor/editor.main.nls.js
+/arcade/vs/language/json/jsonMode.js
+/arcade/vs/language/json/jsonWorker.js
+/arcade/vs/language/typescript/lib/typescriptServices.js
+/arcade/vs/language/typescript/src/mode.js
+/arcade/vs/language/typescript/src/worker.js
+
+# charts
+/arcade/smoothie/smoothie_compressed.js
+/arcade/images/Bars_black.gif
+
+# ai
+/arcade/ai.0.js
+
+/arcade/worker.js
+/arcade/monacoworker.js
+
+# ver Sat Sep 07 2019 10:28:14 GMT+0800 (GMT+08:00)
+
+# target
+/arcade/docs\static\logo.svg
+/arcade/docs\static\logo.svg
+/arcade/docs\static\logo.svg
+/arcade/docs\static\logo.svg
+/arcade/docs\static\Micorsoft_logo_rgb_W-white_D-square.png
+/arcade/docs\static\Micorsoft_logo_rgb_W-white_D.png
+/arcade/docs\static\hero.png
+
+/arcade/target.js
+  
+NETWORK:
+*

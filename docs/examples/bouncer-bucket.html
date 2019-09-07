@@ -1,0 +1,1658 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+
+<head>
+	<meta charset="UTF-8">
+	<title>MakeCode Arcade - arcade</title>
+	<meta name="Description" content="&lt;img class=&quot;ui centered image&quot; src=&quot;/static/examples/bouncer-bucket/bouncer-bucket.png&quot; alt=&quot;Ball dropping into a bucket&quot;&gt;" />
+
+	
+<!-- include meta.html -->
+<!-- This file is typically overriden by the target, with own Twitter
+     account etc. Most data is taken from the theme file though.  
+  -->
+
+<!-- include robotsmeta.html -->
+
+<!-- end include robotsmeta.html -->
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@msmakecode" />
+<meta name="twitter:title" content="MakeCode Arcade - arcade" />
+<meta name="twitter:description" content="&lt;img class=&quot;ui centered image&quot; src=&quot;/static/examples/bouncer-bucket/bouncer-bucket.png&quot; alt=&quot;Ball dropping into a bucket&quot;&gt;" />
+<meta name="twitter:image" content="/static/examples/bouncer-bucket/bouncer-bucket.png" />
+
+<meta property="og:title" content="MakeCode Arcade - arcade" />
+<meta property="og:site_name" content="Microsoft MakeCode" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="&lt;img class=&quot;ui centered image&quot; src=&quot;/static/examples/bouncer-bucket/bouncer-bucket.png&quot; alt=&quot;Ball dropping into a bucket&quot;&gt;" />
+<meta property="fb:app_id" content="" />
+<meta property="og:image" content="/static/examples/bouncer-bucket/bouncer-bucket.png" />
+
+<meta name="format-detection" content="telephone=no">
+<link rel="apple-touch-icon" href="">
+<link rel="icon" type="image/png" href="">
+<link rel="shortcut icon" href="">
+<meta name="theme-color" content="">
+
+<!-- end include meta.html -->
+
+	
+<!-- include head.html -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+
+<link rel="stylesheet" data-rtl="/blb/rtlsemantic.css" href="/arcade/semantic.css" />
+<link id="blocklycss"  data-rtl="/blb/rtlblockly.css" rel="stylesheet" href="/arcade/blockly.css" />
+<link rel="stylesheet" href="/arcade/docfiles/style.css" />
+<link rel="stylesheet" href="/arcade/docfiles/vs.css" />
+<link rel="stylesheet" href="/arcade/docfiles/target.css" />
+
+<script src="/arcade/jquery.js"></script>
+
+<script src="/arcade/embed.js" type="text/javascript"></script>
+<script src="/arcade/docfiles/docs.js" type="text/javascript"></script>
+<script src="/arcade/docfiles/target.js" type="text/javascript"></script>
+
+<style>
+    
+</style>
+
+<!-- end include head.html -->
+
+
+</head>
+
+<body id='root' class='root'>
+
+	<div id="accessibleMenu" class="ui accessibleMenu borderless fixed menu" role="menubar">
+		
+            <a href="#maincontent" class="ui item link" tabindex="0" role="menuitem">Skip to main content</a>
+        
+	</div>
+
+
+	
+<!-- include tocheader.html -->
+<div class="ui vertical accent inverted sidebar menu left hideprint">
+    <div class="item">
+        <a href="/arcade/docs/.html" class="header focused" tabindex="0" title="Go to editor">
+            <img aria-hidden="true" role="presentation" class="ui mini image" src="docs/static/logo.svg" />
+        </a>
+        Documentation
+    </div>
+    <div class="item search">
+        <form id="tocsearch1" role="form" method="get" action="https://www.bing.com/search">
+            <div class="ui fluid icon input">
+                <input type="hidden" name="q1" value="site:https://arcade.makecode.com/" />
+                
+                <input type="search" name="q" placeholder="Search..." aria-label="Search Documentation">
+                <i onclick="document.getElementById('tocsearch1').submit();" tabindex="0" class="search link icon" aria-label="Search" role="button"></i>
+            
+            </div>
+        </form>
+    </div>
+    <!-- TOC Menu -->
+    <div class="menuContainer">
+        
+    <a class="item " href="/arcade/docs/about.html" role="menuitem">About</a>
+
+
+    <a class="item " href="/arcade/docs/faq.html" role="menuitem">FAQ</a>
+
+
+    <div class="item" title="">
+        <a class="header " href="/arcade/docs/lessons.html" role="menu">Lessons</a>
+        <div class="menu">
+            
+    <a class="item " href="/arcade/docs/lessons/cherry-pickr.html" role="menuitem">Cherry Pickr</a>
+
+
+    <a class="item " href="/arcade/docs/lessons/barrel-dodger.html" role="menuitem">Barrel Dodger</a>
+
+        </div>
+    </div>
+
+
+    <div class="item" title="">
+        <a class="header " href="/arcade/docs/classics.html" role="menu">Classics</a>
+        <div class="menu">
+            
+    <a class="item " href="/arcade/docs/examples/ping-pong.html" role="menuitem">Ping Pong</a>
+
+
+    <a class="item " href="/arcade/docs/examples/eater-princess.html" role="menuitem">Eater Princess</a>
+
+
+    <a class="item " href="/arcade/docs/examples/food-machine.html" role="menuitem">Food Machine</a>
+
+
+    <a class="item " href="/arcade/docs/examples/treasure-hunt.html" role="menuitem">Treasure Hunt</a>
+
+
+    <a class="item " href="/arcade/docs/examples/jewels.html" role="menuitem">Jewels</a>
+
+        </div>
+    </div>
+
+
+    <div class="item" title="">
+        <a class="header " href="/arcade/docs/courses.html" role="menu">Courses</a>
+        <div class="menu">
+            
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="dropdown icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/arcade/docs/courses/csintro1.html">CS Intro 1</a>
+        </div>
+        <div class=" content">
+            
+    <div class=" accordion item visible" title="">
+        <div class=" title">
+            <i class="dropdown icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/arcade/docs/courses/csintro1/about.html">About</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/arcade/docs/courses/csintro1/about/script.html" role="menuitem">Programming Language</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/about/teachers.html" role="menuitem">For Teachers</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/about/authors.html" role="menuitem">Authors</a>
+
+        </div>
+    </div>
+
+
+    <div class=" accordion item visible" title="">
+        <div class=" title">
+            <i class="dropdown icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/arcade/docs/courses/csintro1/intro.html">Intro</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/arcade/docs/courses/csintro1/intro/makecode-orientation.html" role="menuitem">Orientation to Makecode</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/intro/birthday-algorithm.html" role="menuitem">Birthday Algorithm</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/intro/sprites.html" role="menuitem">Sprites</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/intro/unplugged.html" role="menuitem">Unplugged: Rock Paper Scissors</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/intro/variable-math.html" role="menuitem">Variable Math</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/intro/info.html" role="menuitem">Info Variables</a>
+
+        </div>
+    </div>
+
+
+    <div class=" accordion item visible" title="">
+        <div class=" title">
+            <i class="dropdown icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/arcade/docs/courses/csintro1/sprites.html">Sprites</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/arcade/docs/courses/csintro1/sprites/unplugged.html" role="menuitem">Unplugged: Sink a Ship</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/sprites/coordinate-walker.html" role="menuitem">Coordinate Walker</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/sprites/collage.html" role="menuitem">Collage</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/sprites/hello-sprite.html" role="menuitem">Hello Sprite</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/sprites/characters.html" role="menuitem">Characters and Stories</a>
+
+        </div>
+    </div>
+
+
+    <div class=" accordion item visible" title="">
+        <div class=" title">
+            <i class="dropdown icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/arcade/docs/courses/csintro1/motion.html">Motion</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/arcade/docs/courses/csintro1/motion/unplugged.html" role="menuitem">Unplugged: Using a Controller</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/motion/sprite-motion-event.html" role="menuitem">Sprite Motion Event</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/motion/overlap1.html" role="menuitem">Overlap Section 1</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/motion/random.html" role="menuitem">Random</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/motion/overlap2.html" role="menuitem">Overlap Section 2</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/motion/create-on-create-sprites.html" role="menuitem">Create Sprite &amp; On Create</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/motion/project.html" role="menuitem">Project</a>
+
+        </div>
+    </div>
+
+
+    <div class=" accordion item visible" title="">
+        <div class=" title">
+            <i class="dropdown icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/arcade/docs/courses/csintro1/loops.html">Loops</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/arcade/docs/courses/csintro1/loops/intro.html" role="menuitem">Intro</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/loops/unplugged.html" role="menuitem">Unplugged: Circle a Chair</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/loops/increment-loop.html" role="menuitem">Increment Loop</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/loops/projectiles.html" role="menuitem">Projectiles</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/loops/projectile-from.html" role="menuitem">Projectiles from Sprites</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/loops/physics.html" role="menuitem">Physics</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/loops/project.html" role="menuitem">Project</a>
+
+        </div>
+    </div>
+
+
+    <div class=" accordion item visible" title="">
+        <div class=" title">
+            <i class="dropdown icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/arcade/docs/courses/csintro1/review.html">Review</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/arcade/docs/courses/csintro1/review/touch-the-button.html" role="menuitem">Extend &quot;touch the button&quot;</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/review/paparazzi.html" role="menuitem">Paparazzi</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/review/asteroid-blaster.html" role="menuitem">Asteroid Blaster</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/review/baseball-catching.html" role="menuitem">Baseball Catching</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/review/dodgey-duck.html" role="menuitem">Dodgey Duck</a>
+
+        </div>
+    </div>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/project/final.html" role="menuitem">Final Project</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="dropdown icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/arcade/docs/courses/csintro2.html">CS Intro 2</a>
+        </div>
+        <div class=" content">
+            
+    <div class=" accordion item visible" title="">
+        <div class=" title">
+            <i class="dropdown icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/arcade/docs/courses/csintro2/about.html">About</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/arcade/docs/courses/csintro2/about/script.html" role="menuitem">Programming Language</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/about/teachers.html" role="menuitem">For Teachers</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/about/authors.html" role="menuitem">Authors</a>
+
+        </div>
+    </div>
+
+
+    <div class=" accordion item visible" title="">
+        <div class=" title">
+            <i class="dropdown icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/arcade/docs/courses/csintro2/functions.html">Functions</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/arcade/docs/courses/csintro2/functions/unplugged.html" role="menuitem">Unplugged: Making a Sandwich</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/functions/intro.html" role="menuitem">Intro to Functions</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/functions/redundancy.html" role="menuitem">Reducing Redundancy with Functions</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/functions/extensions.html" role="menuitem">Using Extensions</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/functions/project.html" role="menuitem">Project</a>
+
+        </div>
+    </div>
+
+
+    <div class=" accordion item visible" title="">
+        <div class=" title">
+            <i class="dropdown icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/arcade/docs/courses/csintro2/tilemap.html">Tilemap</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/arcade/docs/courses/csintro2/tilemap/intro.html" role="menuitem">Intro</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/tilemap/interactions.html" role="menuitem">Interactions</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/tilemap/extensions.html" role="menuitem">Using Corgi Extension</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/tilemap/project.html" role="menuitem">Project</a>
+
+        </div>
+    </div>
+
+
+    <div class=" accordion item visible" title="">
+        <div class=" title">
+            <i class="dropdown icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/arcade/docs/courses/csintro2/logic.html">Logic</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/arcade/docs/courses/csintro2/logic/intro.html" role="menuitem">Introduction</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/logic/if-else.html" role="menuitem">If and Else</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/logic/multiplayer.html" role="menuitem">Multiplayer</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/logic/booleans.html" role="menuitem">Booleans</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/logic/user-input.html" role="menuitem">Validating User Input</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/logic/while.html" role="menuitem">Logic in Loops</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/logic/project.html" role="menuitem">Project</a>
+
+        </div>
+    </div>
+
+
+    <div class=" accordion item visible" title="">
+        <div class=" title">
+            <i class="dropdown icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/arcade/docs/courses/csintro2/arrays.html">Arrays</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/arcade/docs/courses/csintro2/arrays/intro.html" role="menuitem">Intro</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/arrays/string.html" role="menuitem">String Arrays</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/arrays/sprites.html" role="menuitem">Sprite Arrays</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/arrays/tilemap.html" role="menuitem">Tile Arrays</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/arrays/project.html" role="menuitem">Project</a>
+
+        </div>
+    </div>
+
+
+    <div class=" accordion item visible" title="">
+        <div class=" title">
+            <i class="dropdown icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/arcade/docs/courses/csintro2/review.html">Review</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/arcade/docs/courses/csintro2/review/side-scroller.html" role="menuitem">Side Scroller</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/review/blockbuster.html" role="menuitem">Blockbuster Film</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/review/functions.html" role="menuitem">Functionally the Same</a>
+
+        </div>
+    </div>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/final-project.html" role="menuitem">Final Project</a>
+
+        </div>
+    </div>
+
+        </div>
+    </div>
+
+
+    <div class="item" title="">
+        <a class="header " href="/arcade/docs/javascript-games.html" role="menu">JavaScript Games</a>
+        <div class="menu">
+            
+    <a class="item " href="/arcade/docs/examples/asteroids.html" role="menuitem">Asteroids</a>
+
+
+    <a class="item " href="/arcade/docs/examples/bouncer-bucket.html" role="menuitem">Bouncer Bucket</a>
+
+
+    <a class="item " href="/arcade/docs/examples/car-race.html" role="menuitem">Car Race</a>
+
+
+    <a class="item " href="/arcade/docs/examples/collisions.html" role="menuitem">Collisions</a>
+
+
+    <a class="item " href="/arcade/docs/examples/duck.html" role="menuitem">Duck</a>
+
+
+    <a class="item " href="/arcade/docs/examples/guess-the-letter.html" role="menuitem">Guess the Letter</a>
+
+
+    <a class="item " href="/arcade/docs/examples/jumper.html" role="menuitem">Jumper</a>
+
+
+    <a class="item " href="/arcade/docs/examples/mega-bounce.html" role="menuitem">Mega Bounce</a>
+
+
+    <a class="item " href="/arcade/docs/examples/palette.html" role="menuitem">Pallete</a>
+
+
+    <a class="item " href="/arcade/docs/examples/runner.html" role="menuitem">Runner</a>
+
+
+    <a class="item " href="/arcade/docs/examples/snake.html" role="menuitem">Snake</a>
+
+
+    <a class="item " href="/arcade/docs/examples/sorting.html" role="menuitem">Sorting</a>
+
+        </div>
+    </div>
+
+
+    <div class="item" title="">
+        <a class="header " href="/arcade/docs/reference.html" role="menu">Reference</a>
+        <div class="menu">
+            
+    <a class="item " href="/arcade/docs/reference/game.html" role="menuitem">game</a>
+
+
+    <a class="item " href="/arcade/docs/reference/sprites.html" role="menuitem">sprites</a>
+
+
+    <a class="item " href="/arcade/docs/reference/controller.html" role="menuitem">controller</a>
+
+
+    <a class="item " href="/arcade/docs/reference/music.html" role="menuitem">music</a>
+
+
+    <a class="item " href="/arcade/docs/reference/scene.html" role="menuitem">scene</a>
+
+
+    <a class="item " href="/arcade/docs/reference/info.html" role="menuitem">info</a>
+
+
+    <a class="item " href="/arcade/docs/reference/images.html" role="menuitem">images</a>
+
+        </div>
+    </div>
+
+
+    <div class="item" title="">
+        <a class="header " href="/arcade/docs/blocks.html" role="menu">Blocks</a>
+        <div class="menu">
+            
+    <a class="item " href="/arcade/docs/blocks/on-start.html" role="menuitem">On Start</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="dropdown icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/arcade/docs/blocks/loops.html">Loops</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/arcade/docs/blocks/loops/repeat.html" role="menuitem">repeat</a>
+
+
+    <a class="item " href="/arcade/docs/blocks/loops/for.html" role="menuitem">for</a>
+
+
+    <a class="item " href="/arcade/docs/blocks/loops/while.html" role="menuitem">while</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="dropdown icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/arcade/docs/blocks/logic.html">Logic</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/arcade/docs/blocks/logic/if.html" role="menuitem">if</a>
+
+
+    <a class="item " href="/arcade/docs/blocks/logic/boolean.html" role="menuitem">Boolean</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="dropdown icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/arcade/docs/blocks/variables.html">Variables</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/arcade/docs/blocks/variables/assign.html" role="menuitem">assign</a>
+
+
+    <a class="item " href="/arcade/docs/blocks/variables/change.html" role="menuitem">change var</a>
+
+
+    <a class="item " href="/arcade/docs/blocks/variables/var.html" role="menuitem">var</a>
+
+        </div>
+    </div>
+
+
+    <a class="item " href="/arcade/docs/blocks/math.html" role="menuitem">Math</a>
+
+
+    <a class="item " href="/arcade/docs/blocks/javascript-blocks.html" role="menuitem">JavaScript blocks</a>
+
+
+    <a class="item " href="/arcade/docs/blocks/custom.html" role="menuitem">Custom blocks</a>
+
+        </div>
+    </div>
+
+
+    <div class="item" title="">
+        <a class="header " href="/arcade/docs/javascript.html" role="menu">JavaScript</a>
+        <div class="menu">
+            
+    <a class="item " href="/arcade/docs/javascript/call.html" role="menuitem">Calling</a>
+
+
+    <a class="item " href="/arcade/docs/javascript/sequence.html" role="menuitem">Sequencing</a>
+
+
+    <a class="item " href="/arcade/docs/javascript/variables.html" role="menuitem">Variables</a>
+
+
+    <a class="item " href="/arcade/docs/javascript/operators.html" role="menuitem">Operators</a>
+
+
+    <a class="item " href="/arcade/docs/javascript/statements.html" role="menuitem">Statements</a>
+
+
+    <a class="item " href="/arcade/docs/javascript/functions.html" role="menuitem">Functions</a>
+
+
+    <a class="item " href="/arcade/docs/javascript/types.html" role="menuitem">Types</a>
+
+
+    <a class="item " href="/arcade/docs/javascript/classes.html" role="menuitem">Classes</a>
+
+
+    <a class="item " href="/arcade/docs/javascript/interfaces.html" role="menuitem">Interfaces</a>
+
+
+    <a class="item " href="/arcade/docs/javascript/generics.html" role="menuitem">Generics</a>
+
+        </div>
+    </div>
+
+
+    <div class="item" title="">
+        <a class="header " href="/arcade/docs/types.html" role="menu">Types</a>
+        <div class="menu">
+            
+    <a class="item " href="/arcade/docs/types/number.html" role="menuitem">Number</a>
+
+
+    <a class="item " href="/arcade/docs/types/string.html" role="menuitem">String</a>
+
+
+    <a class="item " href="/arcade/docs/types/boolean.html" role="menuitem">Boolean</a>
+
+
+    <a class="item " href="/arcade/docs/types/array.html" role="menuitem">Array</a>
+
+
+    <a class="item " href="/arcade/docs/types/function.html" role="menuitem">Function</a>
+
+
+    <a class="item " href="/arcade/docs/types/image.html" role="menuitem">Image</a>
+
+
+    <a class="item " href="/arcade/docs/types/sprite.html" role="menuitem">Sprite</a>
+
+        </div>
+    </div>
+
+
+
+    </div>
+</div>
+
+<div class="ui fixed accent borderless inverted main menu hideprint">
+  <div class="ui container">
+    
+            <a id="togglesidebar" class="launch icon item" tabindex="0" title="Side menu" aria-label="Side menu" role="menu" aria-expanded="false">
+                <i class="content icon"></i>
+            </a>
+        
+
+    <div class="item">
+        
+    </div>
+    
+    <div class="right menu">
+        <a href="/arcade/docs/.html" class="header item" tabindex="0" title="Go to editor">
+            <img aria-hidden="true" role="presentation" class="ui mini image" src="docs/static/logo.svg" />
+        </a>
+    </div>
+  </div>
+</div>
+<!-- end include tocheader.html -->
+
+
+	<div id="docs" class="pusher">
+
+		
+<!-- include toc.html -->
+<div class="toc ui accent inverted hideprint">
+    <div class="ui vertical accent inverted sticky menu tocmenu">
+        <div class="item">
+            <a href="/arcade/docs/.html" class="header focused" tabindex="0" title="Go to editor">
+                <img aria-hidden="true" role="presentation" class="ui mini image" src="docs/static/logo.svg" />
+            </a>
+            Documentation
+        </div>
+        <div class="item search">
+            <form id="tocsearch2" role="form" method="get" target="_blank" action="https://www.bing.com/search">
+                <div class="ui fluid icon input">
+                    <input type="hidden" name="q1" value="site:https://arcade.makecode.com/" />
+                    
+                <input type="search" name="q" placeholder="Search..." aria-label="Search Documentation">
+                <i onclick="document.getElementById('tocsearch2').submit();" tabindex="0" class="search link icon" aria-label="Search" role="button"></i>
+            
+                </div>
+            </form>
+        </div>
+        <!-- TOC Menu -->
+        <div class="menuContainer">
+            
+    <a class="item " href="/arcade/docs/about.html" role="menuitem">About</a>
+
+
+    <a class="item " href="/arcade/docs/faq.html" role="menuitem">FAQ</a>
+
+
+    <div class="item" title="">
+        <a class="header " href="/arcade/docs/lessons.html" role="menu">Lessons</a>
+        <div class="menu">
+            
+    <a class="item " href="/arcade/docs/lessons/cherry-pickr.html" role="menuitem">Cherry Pickr</a>
+
+
+    <a class="item " href="/arcade/docs/lessons/barrel-dodger.html" role="menuitem">Barrel Dodger</a>
+
+        </div>
+    </div>
+
+
+    <div class="item" title="">
+        <a class="header " href="/arcade/docs/classics.html" role="menu">Classics</a>
+        <div class="menu">
+            
+    <a class="item " href="/arcade/docs/examples/ping-pong.html" role="menuitem">Ping Pong</a>
+
+
+    <a class="item " href="/arcade/docs/examples/eater-princess.html" role="menuitem">Eater Princess</a>
+
+
+    <a class="item " href="/arcade/docs/examples/food-machine.html" role="menuitem">Food Machine</a>
+
+
+    <a class="item " href="/arcade/docs/examples/treasure-hunt.html" role="menuitem">Treasure Hunt</a>
+
+
+    <a class="item " href="/arcade/docs/examples/jewels.html" role="menuitem">Jewels</a>
+
+        </div>
+    </div>
+
+
+    <div class="item" title="">
+        <a class="header " href="/arcade/docs/courses.html" role="menu">Courses</a>
+        <div class="menu">
+            
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="dropdown icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/arcade/docs/courses/csintro1.html">CS Intro 1</a>
+        </div>
+        <div class=" content">
+            
+    <div class=" accordion item visible" title="">
+        <div class=" title">
+            <i class="dropdown icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/arcade/docs/courses/csintro1/about.html">About</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/arcade/docs/courses/csintro1/about/script.html" role="menuitem">Programming Language</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/about/teachers.html" role="menuitem">For Teachers</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/about/authors.html" role="menuitem">Authors</a>
+
+        </div>
+    </div>
+
+
+    <div class=" accordion item visible" title="">
+        <div class=" title">
+            <i class="dropdown icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/arcade/docs/courses/csintro1/intro.html">Intro</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/arcade/docs/courses/csintro1/intro/makecode-orientation.html" role="menuitem">Orientation to Makecode</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/intro/birthday-algorithm.html" role="menuitem">Birthday Algorithm</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/intro/sprites.html" role="menuitem">Sprites</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/intro/unplugged.html" role="menuitem">Unplugged: Rock Paper Scissors</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/intro/variable-math.html" role="menuitem">Variable Math</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/intro/info.html" role="menuitem">Info Variables</a>
+
+        </div>
+    </div>
+
+
+    <div class=" accordion item visible" title="">
+        <div class=" title">
+            <i class="dropdown icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/arcade/docs/courses/csintro1/sprites.html">Sprites</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/arcade/docs/courses/csintro1/sprites/unplugged.html" role="menuitem">Unplugged: Sink a Ship</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/sprites/coordinate-walker.html" role="menuitem">Coordinate Walker</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/sprites/collage.html" role="menuitem">Collage</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/sprites/hello-sprite.html" role="menuitem">Hello Sprite</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/sprites/characters.html" role="menuitem">Characters and Stories</a>
+
+        </div>
+    </div>
+
+
+    <div class=" accordion item visible" title="">
+        <div class=" title">
+            <i class="dropdown icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/arcade/docs/courses/csintro1/motion.html">Motion</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/arcade/docs/courses/csintro1/motion/unplugged.html" role="menuitem">Unplugged: Using a Controller</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/motion/sprite-motion-event.html" role="menuitem">Sprite Motion Event</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/motion/overlap1.html" role="menuitem">Overlap Section 1</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/motion/random.html" role="menuitem">Random</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/motion/overlap2.html" role="menuitem">Overlap Section 2</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/motion/create-on-create-sprites.html" role="menuitem">Create Sprite &amp; On Create</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/motion/project.html" role="menuitem">Project</a>
+
+        </div>
+    </div>
+
+
+    <div class=" accordion item visible" title="">
+        <div class=" title">
+            <i class="dropdown icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/arcade/docs/courses/csintro1/loops.html">Loops</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/arcade/docs/courses/csintro1/loops/intro.html" role="menuitem">Intro</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/loops/unplugged.html" role="menuitem">Unplugged: Circle a Chair</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/loops/increment-loop.html" role="menuitem">Increment Loop</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/loops/projectiles.html" role="menuitem">Projectiles</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/loops/projectile-from.html" role="menuitem">Projectiles from Sprites</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/loops/physics.html" role="menuitem">Physics</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/loops/project.html" role="menuitem">Project</a>
+
+        </div>
+    </div>
+
+
+    <div class=" accordion item visible" title="">
+        <div class=" title">
+            <i class="dropdown icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/arcade/docs/courses/csintro1/review.html">Review</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/arcade/docs/courses/csintro1/review/touch-the-button.html" role="menuitem">Extend &quot;touch the button&quot;</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/review/paparazzi.html" role="menuitem">Paparazzi</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/review/asteroid-blaster.html" role="menuitem">Asteroid Blaster</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/review/baseball-catching.html" role="menuitem">Baseball Catching</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/review/dodgey-duck.html" role="menuitem">Dodgey Duck</a>
+
+        </div>
+    </div>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro1/project/final.html" role="menuitem">Final Project</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="dropdown icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/arcade/docs/courses/csintro2.html">CS Intro 2</a>
+        </div>
+        <div class=" content">
+            
+    <div class=" accordion item visible" title="">
+        <div class=" title">
+            <i class="dropdown icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/arcade/docs/courses/csintro2/about.html">About</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/arcade/docs/courses/csintro2/about/script.html" role="menuitem">Programming Language</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/about/teachers.html" role="menuitem">For Teachers</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/about/authors.html" role="menuitem">Authors</a>
+
+        </div>
+    </div>
+
+
+    <div class=" accordion item visible" title="">
+        <div class=" title">
+            <i class="dropdown icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/arcade/docs/courses/csintro2/functions.html">Functions</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/arcade/docs/courses/csintro2/functions/unplugged.html" role="menuitem">Unplugged: Making a Sandwich</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/functions/intro.html" role="menuitem">Intro to Functions</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/functions/redundancy.html" role="menuitem">Reducing Redundancy with Functions</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/functions/extensions.html" role="menuitem">Using Extensions</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/functions/project.html" role="menuitem">Project</a>
+
+        </div>
+    </div>
+
+
+    <div class=" accordion item visible" title="">
+        <div class=" title">
+            <i class="dropdown icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/arcade/docs/courses/csintro2/tilemap.html">Tilemap</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/arcade/docs/courses/csintro2/tilemap/intro.html" role="menuitem">Intro</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/tilemap/interactions.html" role="menuitem">Interactions</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/tilemap/extensions.html" role="menuitem">Using Corgi Extension</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/tilemap/project.html" role="menuitem">Project</a>
+
+        </div>
+    </div>
+
+
+    <div class=" accordion item visible" title="">
+        <div class=" title">
+            <i class="dropdown icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/arcade/docs/courses/csintro2/logic.html">Logic</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/arcade/docs/courses/csintro2/logic/intro.html" role="menuitem">Introduction</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/logic/if-else.html" role="menuitem">If and Else</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/logic/multiplayer.html" role="menuitem">Multiplayer</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/logic/booleans.html" role="menuitem">Booleans</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/logic/user-input.html" role="menuitem">Validating User Input</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/logic/while.html" role="menuitem">Logic in Loops</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/logic/project.html" role="menuitem">Project</a>
+
+        </div>
+    </div>
+
+
+    <div class=" accordion item visible" title="">
+        <div class=" title">
+            <i class="dropdown icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/arcade/docs/courses/csintro2/arrays.html">Arrays</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/arcade/docs/courses/csintro2/arrays/intro.html" role="menuitem">Intro</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/arrays/string.html" role="menuitem">String Arrays</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/arrays/sprites.html" role="menuitem">Sprite Arrays</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/arrays/tilemap.html" role="menuitem">Tile Arrays</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/arrays/project.html" role="menuitem">Project</a>
+
+        </div>
+    </div>
+
+
+    <div class=" accordion item visible" title="">
+        <div class=" title">
+            <i class="dropdown icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/arcade/docs/courses/csintro2/review.html">Review</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/arcade/docs/courses/csintro2/review/side-scroller.html" role="menuitem">Side Scroller</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/review/blockbuster.html" role="menuitem">Blockbuster Film</a>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/review/functions.html" role="menuitem">Functionally the Same</a>
+
+        </div>
+    </div>
+
+
+    <a class="item " href="/arcade/docs/courses/csintro2/final-project.html" role="menuitem">Final Project</a>
+
+        </div>
+    </div>
+
+        </div>
+    </div>
+
+
+    <div class="item" title="">
+        <a class="header " href="/arcade/docs/javascript-games.html" role="menu">JavaScript Games</a>
+        <div class="menu">
+            
+    <a class="item " href="/arcade/docs/examples/asteroids.html" role="menuitem">Asteroids</a>
+
+
+    <a class="item " href="/arcade/docs/examples/bouncer-bucket.html" role="menuitem">Bouncer Bucket</a>
+
+
+    <a class="item " href="/arcade/docs/examples/car-race.html" role="menuitem">Car Race</a>
+
+
+    <a class="item " href="/arcade/docs/examples/collisions.html" role="menuitem">Collisions</a>
+
+
+    <a class="item " href="/arcade/docs/examples/duck.html" role="menuitem">Duck</a>
+
+
+    <a class="item " href="/arcade/docs/examples/guess-the-letter.html" role="menuitem">Guess the Letter</a>
+
+
+    <a class="item " href="/arcade/docs/examples/jumper.html" role="menuitem">Jumper</a>
+
+
+    <a class="item " href="/arcade/docs/examples/mega-bounce.html" role="menuitem">Mega Bounce</a>
+
+
+    <a class="item " href="/arcade/docs/examples/palette.html" role="menuitem">Pallete</a>
+
+
+    <a class="item " href="/arcade/docs/examples/runner.html" role="menuitem">Runner</a>
+
+
+    <a class="item " href="/arcade/docs/examples/snake.html" role="menuitem">Snake</a>
+
+
+    <a class="item " href="/arcade/docs/examples/sorting.html" role="menuitem">Sorting</a>
+
+        </div>
+    </div>
+
+
+    <div class="item" title="">
+        <a class="header " href="/arcade/docs/reference.html" role="menu">Reference</a>
+        <div class="menu">
+            
+    <a class="item " href="/arcade/docs/reference/game.html" role="menuitem">game</a>
+
+
+    <a class="item " href="/arcade/docs/reference/sprites.html" role="menuitem">sprites</a>
+
+
+    <a class="item " href="/arcade/docs/reference/controller.html" role="menuitem">controller</a>
+
+
+    <a class="item " href="/arcade/docs/reference/music.html" role="menuitem">music</a>
+
+
+    <a class="item " href="/arcade/docs/reference/scene.html" role="menuitem">scene</a>
+
+
+    <a class="item " href="/arcade/docs/reference/info.html" role="menuitem">info</a>
+
+
+    <a class="item " href="/arcade/docs/reference/images.html" role="menuitem">images</a>
+
+        </div>
+    </div>
+
+
+    <div class="item" title="">
+        <a class="header " href="/arcade/docs/blocks.html" role="menu">Blocks</a>
+        <div class="menu">
+            
+    <a class="item " href="/arcade/docs/blocks/on-start.html" role="menuitem">On Start</a>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="dropdown icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/arcade/docs/blocks/loops.html">Loops</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/arcade/docs/blocks/loops/repeat.html" role="menuitem">repeat</a>
+
+
+    <a class="item " href="/arcade/docs/blocks/loops/for.html" role="menuitem">for</a>
+
+
+    <a class="item " href="/arcade/docs/blocks/loops/while.html" role="menuitem">while</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="dropdown icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/arcade/docs/blocks/logic.html">Logic</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/arcade/docs/blocks/logic/if.html" role="menuitem">if</a>
+
+
+    <a class="item " href="/arcade/docs/blocks/logic/boolean.html" role="menuitem">Boolean</a>
+
+        </div>
+    </div>
+
+
+    <div class="ui  accordion item visible" role="tree" title="">
+        <div class=" title">
+            <i class="dropdown icon"></i>
+            <a class="header" role="treeitem" aria-expanded="false" href="/arcade/docs/blocks/variables.html">Variables</a>
+        </div>
+        <div class=" content">
+            
+    <a class="item " href="/arcade/docs/blocks/variables/assign.html" role="menuitem">assign</a>
+
+
+    <a class="item " href="/arcade/docs/blocks/variables/change.html" role="menuitem">change var</a>
+
+
+    <a class="item " href="/arcade/docs/blocks/variables/var.html" role="menuitem">var</a>
+
+        </div>
+    </div>
+
+
+    <a class="item " href="/arcade/docs/blocks/math.html" role="menuitem">Math</a>
+
+
+    <a class="item " href="/arcade/docs/blocks/javascript-blocks.html" role="menuitem">JavaScript blocks</a>
+
+
+    <a class="item " href="/arcade/docs/blocks/custom.html" role="menuitem">Custom blocks</a>
+
+        </div>
+    </div>
+
+
+    <div class="item" title="">
+        <a class="header " href="/arcade/docs/javascript.html" role="menu">JavaScript</a>
+        <div class="menu">
+            
+    <a class="item " href="/arcade/docs/javascript/call.html" role="menuitem">Calling</a>
+
+
+    <a class="item " href="/arcade/docs/javascript/sequence.html" role="menuitem">Sequencing</a>
+
+
+    <a class="item " href="/arcade/docs/javascript/variables.html" role="menuitem">Variables</a>
+
+
+    <a class="item " href="/arcade/docs/javascript/operators.html" role="menuitem">Operators</a>
+
+
+    <a class="item " href="/arcade/docs/javascript/statements.html" role="menuitem">Statements</a>
+
+
+    <a class="item " href="/arcade/docs/javascript/functions.html" role="menuitem">Functions</a>
+
+
+    <a class="item " href="/arcade/docs/javascript/types.html" role="menuitem">Types</a>
+
+
+    <a class="item " href="/arcade/docs/javascript/classes.html" role="menuitem">Classes</a>
+
+
+    <a class="item " href="/arcade/docs/javascript/interfaces.html" role="menuitem">Interfaces</a>
+
+
+    <a class="item " href="/arcade/docs/javascript/generics.html" role="menuitem">Generics</a>
+
+        </div>
+    </div>
+
+
+    <div class="item" title="">
+        <a class="header " href="/arcade/docs/types.html" role="menu">Types</a>
+        <div class="menu">
+            
+    <a class="item " href="/arcade/docs/types/number.html" role="menuitem">Number</a>
+
+
+    <a class="item " href="/arcade/docs/types/string.html" role="menuitem">String</a>
+
+
+    <a class="item " href="/arcade/docs/types/boolean.html" role="menuitem">Boolean</a>
+
+
+    <a class="item " href="/arcade/docs/types/array.html" role="menuitem">Array</a>
+
+
+    <a class="item " href="/arcade/docs/types/function.html" role="menuitem">Function</a>
+
+
+    <a class="item " href="/arcade/docs/types/image.html" role="menuitem">Image</a>
+
+
+    <a class="item " href="/arcade/docs/types/sprite.html" role="menuitem">Sprite</a>
+
+        </div>
+    </div>
+
+
+
+        </div>
+    </div>
+</div>
+<!-- end include toc.html -->
+
+
+		<div class="article" id="maincontent">
+			<div class="article-inner">
+
+				
+<!-- include header.html -->
+<div class="ui one column padded grid hideprint hidemobile">
+    <div class="column">
+        
+    </div>
+</div>
+
+<!-- end include header.html -->
+
+
+				<div class="main ui container fluid mainbody">
+					
+            <button id="printbtn" class="circular ui icon right floated button hideprint" title="Print this page">
+                <i class="icon print"></i>
+            </button>
+         
+    <div class="ui text">
+        <h1 id="bouncer-bucket">Bouncer Bucket</h1><p><img class="ui centered image" src="/static/examples/bouncer-bucket/bouncer-bucket.png" alt="Ball dropping into a bucket"></p>
+<p>This game drops balls onto the screen and makes them bounce while moving left to right. The purpose of the game is to catch the balls in a bucket before they bounce away and leave the screen. The player scores points for each ball caught. Balls move at different speeds so catching a faster ball scores a higher point value.</p>
+<h2 id="game-concepts">Game concepts</h2><h3 id="sprite-physics">Sprite physics</h3><p>Using the motion properties of sprites we can simulate the action of a ball or balls bouncing. Along with a position, we can assign velocity and acceleration to a sprite representing a ball. To make the sprite behave like a real ball dropping from above, it begins at the top of the screen with velocity of <code>0</code> and is given a value of acceleration in the down direction. The value of acceleration chosen for the game is <code>100</code> pixels per second, per second. This makes the ball sprite speed up as it drops, simulating the effect of gravity. The ball is also sent moving left to right at a constant velocity based on the color of the ball. Green balls go slow, <code>10</code> pixels per second. The red and orange balls go faster at <code>20</code> and <code>30</code> pixels per second.</p>
+<h3 id="creating-the-bounce">Creating the bounce</h3><p>A game update interval (the <strong>onUpdateInterval</strong> function) checks to see if any balls have reached the bottom of the screen. If they have, their velocity is set to negative to make them go back up. The game physics knows to make the acceleration invert so the ball will slow down as it moves upward. It will actually stop at the value of <strong>y</strong> were it started. But at that point, the game physics changes the direction of acceleration and the ball begins to drop again.</p>
+<p>This is a nice effect but we know that in real life a ball will go to a lower height each time it bounces due to the loss of energy. We can simulate this by adding a little bit more acceleration to the ball each time it bounces. This creates a decay effect causing the bounce to peak at a lower point each time. In the game, the decay acceleration added to the current acceleration is <code>20</code>.</p>
+<p>Since the came can have multiple balls bouncing at the same time, their sprites are kept in an array so the game update interval can scan for which ones have hit the bottom of the screen.</p>
+<h3 id="catching-the-balls">Catching the balls</h3><p>The balls are caught in a bucket sprite. The bucket is moved with the left and right buttons to make it line up under a dropping ball. The <strong>x</strong> position of the bucket is adjusted in an <strong>onUpdate</strong> function by adding the button change, or <em>delta</em>, value of <strong>dx</strong>. There is a 3 pixel target width for the ball to enter the bucket. So, the <strong>x</strong> value of the ball can only be <code>1</code> pixel on either side of the <strong>x</strong> value of the bucket to make a catch and score points.</p>
+<p>To make it a little move difficult to score points, the bucket must move to a new position every <code>3</code> seconds. Otherwise, the player could just leave the bucket in one place and wait for balls to randomly drop in.</p>
+<p>When the balls hit the bucket but miss the target spot, they are bounced away from the side of the bucket they contacted.</p>
+<p>The bucket catching code uses the <strong>onOverlap</strong> event to detect when a ball sprite reaches the bucket sprite.</p>
+<h3 id="dropping-balls">Dropping balls</h3><p>Each ball is dropped at a random location in the upper corner of the screen. The player can’t expect a ball to drop at the same place every time. When a ball bounces off the screen it’s destroyed and replaced by another ball whose type is randomly chosen.</p>
+<h3 id="playing-the-game">Playing the game</h3><p>There are two modes of play: single ball and multiple balls. Press the <strong>A</strong> button to drop a single ball and press the <strong>B</strong> to drop <code>10</code> balls at once. The single ball mode runs for <code>45</code> seconds and the multiple ball mode runs for <code>30</code> seconds. The player tries to catch as many balls as possible while the time counts down.</p>
+<h2 id="game-program">Game program</h2><p>Here’s the code for the <em>bouncer bucket</em> game. Have fun!</p>
+<pre><code class="lang-blocks">enum SpriteKind {
+    Player,
+    Ball
+}
+let bouncers: Sprite[] = []
+let balls: Image[] = []
+let catcher: Sprite = null
+let deadball: Sprite = null
+let sitting = 0
+let playing = false
+game.splash(&quot;Bouncer Bucket&quot;, &quot;A = 1 ball, B = 10 balls&quot;)
+balls.push(img`
+. . 7 7 7 7 . . 
+. 7 7 7 7 7 7 . 
+7 7 7 7 7 7 7 7 
+7 7 7 7 7 7 7 7 
+7 7 7 7 7 7 7 7 
+7 7 7 7 7 7 7 7 
+. 7 7 7 7 7 7 . 
+. . 7 7 7 7 . . 
+`)
+balls.push(img`
+. . 2 2 2 2 . . 
+. 2 2 2 2 2 2 . 
+2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 
+. 2 2 2 2 2 2 . 
+. . 2 2 2 2 . . 
+`)
+balls.push(img`
+. . 4 4 4 4 . . 
+. 4 4 4 4 4 4 . 
+4 4 4 4 4 4 4 4 
+4 4 4 4 4 4 4 4 
+4 4 4 4 4 4 4 4 
+4 4 4 4 4 4 4 4 
+. 4 4 4 4 4 4 . 
+. . 4 4 4 4 . . 
+`)
+catcher = sprites.create(img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+1 . . . . . . . . . . . . . . 1 
+f e e . . . . . . . . . . e e f 
+1 f e e . . . . . . . . e e f 1 
+1 1 f e e e e e e e e e e f 1 1 
+. 1 e f e e e e e e e e f e 1 . 
+. 1 e f e e e e e e e e f e 1 . 
+. 1 e e f f e e e e f f e e 1 . 
+. 1 e e e e f f f f e e e e 1 . 
+. 1 1 e e e e e e e e e e 1 1 . 
+. . 1 e e e e e e e e e e 1 . . 
+. . 1 e e e e e e e e e e 1 . . 
+. . 1 1 e e e e e e e e 1 1 . . 
+. . . 1 e e e e e e e e 1 . . . 
+. . . 1 1 1 1 1 1 1 1 1 1 . . . 
+`, SpriteKind.Player)
+catcher.bottom = scene.screenHeight() - 1
+catcher.setFlag(SpriteFlag.StayInScreen, true)
+info.setScore(0)
+sprites.onOverlap(SpriteKind.Ball, SpriteKind.Player, function (sprite, otherSprite) {
+    if (sprite.x &gt; otherSprite.x - 2 &amp;&amp; sprite.x &lt; otherSprite.x + 2) {
+        if (sitting &gt; 300) {
+            otherSprite.say(&quot;nope&quot;, 200)
+            sprite.vy = sprite.vy * -2
+        } else {
+            let normalScore = sprite.vx
+            if (normalScore &lt; 0) {
+                normalScore = normalScore * -1
+            }
+            otherSprite.say(&quot;&quot; + normalScore, 200)
+            info.setScore(info.score() + normalScore)
+            sprite.destroy()
+        }
+    } else if (sprite.x &lt;= otherSprite.x) {
+        sprite.vx = sprite.vx * -2
+    } else {
+        sprite.vx = sprite.vx * 2
+    }
+})
+info.onCountdownEnd(function () {
+    playing = false
+    game.over()
+})
+sprites.onDestroyed(SpriteKind.Ball, function (sprite) {
+    for (let j = 0; j &lt;= bouncers.length - 1; j++) {
+        if (bouncers[j] == sprite) {
+            deadball = bouncers.removeAt(j)
+        }
+    }
+    makeBouncer()
+})
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    if (!playing) {
+        playing = true
+        makeBouncer()
+        info.startCountdown(60)
+    }
+})
+controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
+    if (!playing) {
+        playing = true
+        for (let i = 0; i &lt; 10; i++) {
+            makeBouncer()
+        }
+        info.startCountdown(30)
+    }
+})
+function makeBouncer() {
+    let ballChoice = Math.randomRange(0, 2)
+    let ballsCount = bouncers.unshift(sprites.create(balls[ballChoice], SpriteKind.Ball))
+    bouncers[0].setFlag(SpriteFlag.AutoDestroy, true)
+    bouncers[0].x = Math.randomRange(0, scene.screenWidth() / 4)
+    bouncers[0].y = Math.randomRange(0, scene.screenHeight() / 3)
+    bouncers[0].vx = 10 + ballChoice * 10
+    bouncers[0].ay = 100
+}
+game.onUpdate(function () {
+    let moveX = controller.dx()
+    if (moveX != 0) {
+        sitting = 0
+        catcher.x += moveX
+    }
+})
+game.onUpdateInterval(10, function () {
+    for (let bouncer of bouncers) {
+        if (bouncer.bottom &gt;= scene.screenHeight() &amp;&amp; bouncer.vy &gt; 0) {
+            bouncer.vy = bouncer.vy * -1
+            bouncer.ay = bouncer.ay + 20
+        }
+    }
+    sitting += 1    
+})</code></pre>
+
+    </div>
+
+					<div class="hideprint"></div>
+				</div>
+
+				<div class="showmobile hideprint">
+					 
+				</div>
+
+				
+<!-- include footer.html -->
+<footer class="ui vertical footer segment hideprint" aria-hidden="false">
+    <div class="ui center aligned container">
+        <div class="ui horizontal link list">
+            <a class="item" href="https://twitter.com/intent/follow?screen_name=MsMakeCode" title="Follow us on Twitter" target="_blank"
+                rel="noopener">
+                <i class="huge icon twitter"></i>
+            </a>
+            <a class="item" href="https://www.instagram.com/makecode/" title="Follow us on Instagram" target="_blank" rel="noopened">
+                <i class="huge icon instagram"></i>
+            </a>
+            <a class="item" href="https://www.youtube.com/channel/UCye7YlvFUUQ1dSy0WZZ1T_Q" title="Subscribe to our YouTube channel"
+                target="_blank" rel="noopened">
+                <i class="huge icon youtube"></i>
+            </a>
+            <a class="item" href="mailto:makecode@microsoft.com" title="Send us an Email" rel="noopened">
+                <i class="huge icon mail"></i>
+            </a>
+        </div>
+        <div class="ui section divider"></div>
+        <div class="ui container horizontal small divided link list">
+            <!-- <a class="item" href="https://makecode.com/contact" target="_blank" rel="noopener">Contact Us</a> -->
+            <a class="item" href="https://makecode.com/privacy" target="_blank" rel="noopener">Privacy &amp; Cookies</a>
+            <a class="item" href="https://makecode.com/termsofuse" target="_blank" rel="noopener"> Terms Of Use</a>
+            <a class="item" href="https://makecode.com/trademarks" target="_blank" rel="noopener">Trademarks</a>
+            <div class="item">© 2018 Microsoft</div>
+        </div>
+        <div class="ui container horizontal small divided link list">
+            <a class="ui centered item" href="https://makecode.com/" title="Microsoft MakeCode" target="_blank" rel="noopener">Powered by Microsoft MakeCode</a>
+        </div>
+    </div>
+</footer>
+
+<!-- end include footer.html -->
+
+			</div>
+
+			<div class="hidemobile hideprint">
+				 
+			</div>
+
+		</div>
+
+	</div>
+
+
+	
+<!-- include macros.html -->
+<!-- macro button -->
+
+<!-- macro vimeo -->
+
+<!-- macro youtube -->
+
+<!-- macro section -->
+
+<!-- macro hide -->
+
+<!-- macro avatar -->
+
+<!-- macro hint -->
+
+<!-- wrapped around ordinary content -->
+<!-- macro main-container -->
+
+<!-- used for 'column' box - they are collected and wrapped in 'column-container' -->
+<!-- macro column -->
+<!-- macro column-container -->
+
+
+<!-- Menu on the top of the page -->
+<!-- macro item -->
+
+<!-- macro divider -->
+
+<!-- macro top-dropdown -->
+
+<!-- macro inner-dropdown -->
+
+
+<!-- TOC in the sidebar -->
+<!-- macro item -->
+
+<!-- macro divider -->
+
+<!-- macro top-dropdown -->
+
+<!-- macro top-dropdown-noheading -->
+
+<!-- macro inner-dropdown -->
+
+<!-- macro nested-dropdown -->
+
+<!-- end include macros.html -->
+
+	
+<!-- include tracking.html -->
+<script type="text/javascript" src="/arcade/pxtweb.js"></script>
+<script type="text/javascript">
+    window.loadAppInsights = function (includeCookie) {
+        var appInsights=window.appInsights||function(config){
+            function i(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s="AuthenticatedUserContext",h="start",c="stop",l="Track",a=l+"Event",v=l+"Page",y=u.createElement(o),r,f;y.src=config.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js";u.getElementsByTagName(o)[0].parentNode.appendChild(y);try{t.cookie=u.cookie}catch(p){}for(t.queue=[],t.version="1.0",r=["Event","Exception","Metric","PageView","Trace","Dependency"];r.length;)i("track"+r.pop());return i("set"+s),i("clear"+s),i(h+a),i(c+a),i(h+v),i(c+v),i("flush"),config.disableExceptionTracking||(r="onerror",i("_"+r),f=e[r],e[r]=function(config,i,u,e,o){var s=f&&f(config,i,u,e,o);return s!==!0&&t["_"+r](config,i,u,e,o),s}),t
+        }({
+            instrumentationKey:"9801ed01-c40f-46ec-aa40-2a1742a9e71c",
+            disableAjaxTracking: true,
+            overridePageViewDuration: false,
+            disableExceptionTracking: true,
+            isCookieUseDisabled: !includeCookie,
+            isStorageUseDisabled: !includeCookie,
+            url: "/arcade/ai.0.js"
+        });
+        window.appInsights=appInsights;
+        appInsights.queue.push(function () {
+            appInsights.context.addTelemetryInitializer(function (envelope) {
+                if (typeof pxtConfig === "undefined") return;
+                var telemetryItem = envelope.data.baseData;
+                telemetryItem.properties = telemetryItem.properties || {};
+                telemetryItem.properties["target"] = pxtConfig.targetId;
+                telemetryItem.properties["stage"] = (pxtConfig.relprefix || "/--").replace(/[^a-z]/ig, '')
+                telemetryItem.properties["cookie"] = includeCookie;
+                if (typeof Windows !== "undefined")
+                    telemetryItem.properties["WindowsApp"] = 1;
+                var userAgent = navigator.userAgent.toLowerCase();
+                var userAgentRegexResult = /\belectron\/(\d+\.\d+\.\d+.*?)(?: |$)/i.exec(userAgent); // Example navigator.userAgent: "Mozilla/5.0 Chrome/61.0.3163.100 Electron/2.0.0 Safari/537.36"
+                if (userAgentRegexResult) {
+                    telemetryItem.properties["Electron"] = 1;
+                    telemetryItem.properties["ElectronVersion"] = userAgentRegexResult[1];
+                }
+                if (typeof pxtElectron !== "undefined") {
+                    telemetryItem.properties["PxtElectron"] = 1;
+                    telemetryItem.properties["ElectronVersion"] = pxtElectron.versions.electronVersion;
+                    telemetryItem.properties["ChromiumVersion"] = pxtElectron.versions.chromiumVersion;
+                    telemetryItem.properties["NodeVersion"] = pxtElectron.versions.nodeVersion;
+                    telemetryItem.properties["PxtElectronVersion"] = pxtElectron.versions.pxtElectronVersion;
+                    telemetryItem.properties["PxtCoreVersion"] = pxtElectron.versions.pxtCoreVersion;
+                    telemetryItem.properties["PxtTargetVersion"] = pxtElectron.versions.pxtTargetVersion;
+                    telemetryItem.properties["PxtElectronIsProd"] = pxtElectron.versions.isProd;
+                }
+            });
+        });
+        appInsights.trackPageView(null, scrubUrl(window.location.toString()), {urlReferrer: scrubUrl(document.referrer.toString())});
+
+        //Scrub the key (if any) from the URL.
+        function scrubUrl(url) {
+            var scriptIdRegex = /(?:\d{5}-\d{5}-\d{5}-\d{5})|(?:_[0-9a-zA-Z]{12})/g;
+            return url.replace(scriptIdRegex, "xxxxx-xxxxx-xxxxx-xxxxx");
+        }
+    }
+    pxt.initAnalyticsAsync();
+</script>
+<!-- end include tracking.html -->
+
+
+</body>
+
+</html>

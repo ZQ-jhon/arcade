@@ -1,0 +1,23 @@
+{
+  "lang": "en",
+  "dir": "ltr",
+  "name": "arcade",
+  "short_name": "arcade",
+  "background_color": "#FAFAFA",
+  "icons": [
+    {
+      "src": "@cdnUrl@/blob/e61542d8e8c86c1fd1795858a29ffee3e68cfb0a/static/icons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "types": "image/png"
+    },
+    {
+      "src": "@cdnUrl@/blob/caee16e87e72656668661af219fa6be84a08192b/static/icons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "types": "image/png"
+    }
+  ],
+  "scope": "/",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "landscape"
+}

@@ -1,0 +1,10 @@
+CACHE MANIFEST
+
+CACHE:
+/arcade/bluebird.min.js
+/arcade/pxtsim.js
+/arcade/sim.js
+/arcade/sim.css
+
+NETWORK:
+*

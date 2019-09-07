@@ -1,0 +1,169 @@
+{
+  "id": "arcade",
+  "name": "arcade",
+  "title": "MakeCode Arcade",
+  "corepkg": "core",
+  "cloud": {
+    "workspace": false,
+    "sharing": true,
+    "importing": true,
+    "packages": true,
+    "publishing": true,
+    "githubPackages": true
+  },
+  "compile": {
+    "useUF2": true,
+    "webUSB": false,
+    "deployDrives": ".*",
+    "deployFileMarker": "INFO_UF2.TXT",
+    "driveName": "ARCADE",
+    "floatingPoint": true,
+    "taggedInts": true,
+    "saveAsPNG": true,
+    "nativeType": "thumb",
+    "gc": true,
+    "upgrades": [],
+    "switches": {},
+    "jsRefCounting": false,
+    "vtableShift": 2
+  },
+  "compileService": {
+    "buildEngine": "codal",
+    "githubCorePackage": "lancaster-university/codal",
+    "gittag": "v0.5.0",
+    "dockerImage": "pext/yotta:latest"
+  },
+  "variants": {
+    "stm32f401": {
+      "compile": {
+        "hasHex": true,
+        "openocdScript": "source [find interface/stlink-v2.cfg]; source [find target/stm32f4x.cfg]",
+        "vtableShift": 4
+      },
+      "compileService": {
+        "codalTarget": {
+          "name": "codal-big-brainpad",
+          "url": "https://github.com/lancaster-university/codal-big-brainpad",
+          "branch": "v1.0.11",
+          "type": "git"
+        },
+        "codalBinary": "STM32",
+        "serviceId": "codal2stm32",
+        "dockerImage": "pext/yotta:latest"
+      }
+    },
+    "samd51": {
+      "compile": {
+        "hasHex": true,
+        "openocdScriptAlt": "source [find interface/cmsis-dap.cfg]; set CHIPNAME at91samd51g19; source [find target/at91samdXX.cfg]",
+        "openocdScript": "source [find interface/stlink-v2.cfg]; set CPUTAPID 0x2ba01477; set CHIPNAME at91samd51g19; source [find target/at91samdXX.cfg]",
+        "ramSize": 196608,
+        "vtableShift": 4
+      },
+      "compileService": {
+        "codalTarget": {
+          "name": "codal-itsybitsy-m4",
+          "url": "https://github.com/lancaster-university/codal-itsybitsy-m4",
+          "branch": "v0.0.8",
+          "type": "git"
+        },
+        "codalBinary": "ITSYBITSY_M4",
+        "serviceId": "codal2samd51",
+        "dockerImage": "pext/yotta:latest"
+      }
+    },
+    "rpi": {
+      "compile": {
+        "hasHex": true,
+        "useELF": true,
+        "runtimeIsARM": true,
+        "vtableShift": 4,
+        "flashCodeAlign": 256,
+        "stackAlign": 2
+      },
+      "compileService": {
+        "buildEngine": "dockermake",
+        "dockerImage": "pext/rpi:latest",
+        "serviceId": "rpi"
+      }
+    }
+  },
+  "serial": {
+    "useEditor": true,
+    "log": true,
+    "editorTheme": {
+      "graphBackground": "#d9d9d9",
+      "lineColors": [
+        "#009DDC",
+        "#FB48C7",
+        "#40bf4a",
+        "#8073E5",
+        "#d25b33"
+      ]
+    }
+  },
+  "runtime": {
+    "mathBlocks": true,
+    "loopsBlocks": true,
+    "logicBlocks": true,
+    "variablesBlocks": true,
+    "textBlocks": true,
+    "functionBlocks": true,
+    "listsBlocks": true,
+    "bannedCategories": [
+      "pins",
+      "console",
+      "control"
+    ]
+  },
+  "simulator": {
+    "autoRun": true,
+    "aspectRatio": 0.85,
+    "dynamicBoardDefinition": true
+  },
+  "versions": {
+    "target": "0.1.0",
+    "pxt": "5.0.1"
+  },
+  "blocksprj": {
+    "id": "blocksprj",
+    "config": {
+      "name": "{0}",
+      "dependencies": {
+        "device": "*"
+      },
+      "description": "",
+      "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md"
+      ],
+      "additionalFilePaths": []
+    },
+    "files": {
+      "main.blocks": "<xml xmlns=\"http://www.w3.org/1999/xhtml\">\n  <variables></variables>\n  <block type=\"pxt-on-start\" x=\"0\" y=\"0\"></block>\n  <block type=\"gameupdate\" x=\"180\" y=\"0\"></block>\n</xml>",
+      "main.ts": " ",
+      "README.md": " "
+    }
+  },
+  "tsprj": {
+    "id": "tsprj",
+    "config": {
+      "name": "{0}",
+      "dependencies": {
+        "device": "*"
+      },
+      "description": "",
+      "files": [
+        "main.ts",
+        "README.md"
+      ],
+      "additionalFilePaths": []
+    },
+    "files": {
+      "main.ts": " ",
+      "README.md": " "
+    }
+  },
+  "bundledcoresvgs": {}
+}

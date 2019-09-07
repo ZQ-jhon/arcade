@@ -1,0 +1,17 @@
+{
+    "packages": {
+        "approvedOrgs": [
+            "Microsoft"
+        ],
+        "approvedRepos": [
+            "adafruit/Circuit-Playground-Character-Icons"
+        ]
+    },
+    "galleries": {
+        "Tutorials": "tutorials",
+        "Blocks Games": "blocks-games",
+        "Classics": "classics",
+        "JavaScript Games": "javascript-games",
+        "Lessons": "lessons"
+    }
+}

@@ -1,0 +1,1479 @@
+{
+  "logoUrl": "https://github.com/Microsoft/pxt-32",
+  "logo": "docs/static/logo.svg",
+  "docsLogo": "docs/static/logo.svg",
+  "portraitLogo": "docs/static/logo.svg",
+  "footerLogo": "docs/static/logo.svg",
+  "organization": "Microsoft MakeCode",
+  "organizationUrl": "https://makecode.com/org",
+  "organizationLogo": "docs/static/Micorsoft_logo_rgb_W-white_D-square.png",
+  "organizationWideLogo": "docs/static/Micorsoft_logo_rgb_W-white_D.png",
+  "homeUrl": "https://arcade.makecode.com/",
+  "embedUrl": "https://arcade.makecode.com/",
+  "privacyUrl": "https://go.microsoft.com/fwlink/?LinkId=521839",
+  "termsOfUseUrl": "https://go.microsoft.com/fwlink/?LinkID=206977",
+  "betaUrl": "https://github.com/Microsoft/pxt-32",
+  "githubUrl": "https://github.com/Microsoft/pxt-32",
+  "boardName": "Arcade",
+  "docMenu": [
+    {
+      "name": "About",
+      "path": "/about"
+    },
+    {
+      "name": "Docs",
+      "path": "/docs"
+    }
+  ],
+  "coloredToolbox": true,
+  "monacoToolbox": true,
+  "invertedMenu": true,
+  "showHomeScreen": true,
+  "highContrast": true,
+  "debugger": true,
+  "print": true,
+  "hasAudio": true,
+  "allowPackageExtensions": true,
+  "homeScreenHero": "docs/static/hero.png",
+  "blocklyOptions": {
+    "grid": {
+      "spacing": 20,
+      "length": 100,
+      "colour": "rgba(107, 79, 118, 0.10)",
+      "snap": true
+    }
+  },
+  "blockColors": {
+    "loops": "#20BF6B",
+    "logic": "#45AAF2",
+    "math": "#A55EEA",
+    "variables": "#EC3B59",
+    "text": "#F5D547",
+    "arrays": "#FF8F08",
+    "functions": "#1446A0"
+  },
+  "simAnimationEnter": "fly right in",
+  "simAnimationExit": "fly right out",
+  "crowdinProject": "kindscript",
+  "monacoColors": {
+    "editor.background": "#FFFAE7"
+  },
+  "TOC": [
+    {
+      "name": "About",
+      "subitems": [],
+      "path": "/about",
+      "nextName": "FAQ",
+      "nextPath": "/faq"
+    },
+    {
+      "name": "FAQ",
+      "subitems": [],
+      "path": "/faq",
+      "prevName": "About",
+      "prevPath": "/about",
+      "nextName": "Lessons",
+      "nextPath": "/lessons"
+    },
+    {
+      "name": "Lessons",
+      "subitems": [
+        {
+          "name": "Cherry Pickr",
+          "subitems": [],
+          "path": "/lessons/cherry-pickr",
+          "prevName": "Lessons",
+          "prevPath": "/lessons",
+          "nextName": "Barrel Dodger",
+          "nextPath": "/lessons/barrel-dodger"
+        },
+        {
+          "name": "Barrel Dodger",
+          "subitems": [],
+          "path": "/lessons/barrel-dodger",
+          "prevName": "Cherry Pickr",
+          "prevPath": "/lessons/cherry-pickr",
+          "nextName": "Classics",
+          "nextPath": "/classics"
+        }
+      ],
+      "path": "/lessons",
+      "prevName": "FAQ",
+      "prevPath": "/faq",
+      "nextName": "Cherry Pickr",
+      "nextPath": "/lessons/cherry-pickr"
+    },
+    {
+      "name": "Classics",
+      "subitems": [
+        {
+          "name": "Ping Pong",
+          "subitems": [],
+          "path": "/examples/ping-pong",
+          "prevName": "Classics",
+          "prevPath": "/classics",
+          "nextName": "Eater Princess",
+          "nextPath": "/examples/eater-princess"
+        },
+        {
+          "name": "Eater Princess",
+          "subitems": [],
+          "path": "/examples/eater-princess",
+          "prevName": "Ping Pong",
+          "prevPath": "/examples/ping-pong",
+          "nextName": "Food Machine",
+          "nextPath": "/examples/food-machine"
+        },
+        {
+          "name": "Food Machine",
+          "subitems": [],
+          "path": "/examples/food-machine",
+          "prevName": "Eater Princess",
+          "prevPath": "/examples/eater-princess",
+          "nextName": "Treasure Hunt",
+          "nextPath": "/examples/treasure-hunt"
+        },
+        {
+          "name": "Treasure Hunt",
+          "subitems": [],
+          "path": "/examples/treasure-hunt",
+          "prevName": "Food Machine",
+          "prevPath": "/examples/food-machine",
+          "nextName": "Jewels",
+          "nextPath": "/examples/jewels"
+        },
+        {
+          "name": "Jewels",
+          "subitems": [],
+          "path": "/examples/jewels",
+          "prevName": "Treasure Hunt",
+          "prevPath": "/examples/treasure-hunt",
+          "nextName": "Courses",
+          "nextPath": "/courses"
+        }
+      ],
+      "path": "/classics",
+      "prevName": "Barrel Dodger",
+      "prevPath": "/lessons/barrel-dodger",
+      "nextName": "Ping Pong",
+      "nextPath": "/examples/ping-pong"
+    },
+    {
+      "name": "Courses",
+      "subitems": [
+        {
+          "name": "CS Intro 1",
+          "subitems": [
+            {
+              "name": "About",
+              "subitems": [
+                {
+                  "name": "Programming Language",
+                  "subitems": [],
+                  "path": "/courses/csintro1/about/script",
+                  "prevName": "About",
+                  "prevPath": "/courses/csintro1/about",
+                  "nextName": "For Teachers",
+                  "nextPath": "/courses/csintro1/about/teachers"
+                },
+                {
+                  "name": "For Teachers",
+                  "subitems": [],
+                  "path": "/courses/csintro1/about/teachers",
+                  "prevName": "Programming Language",
+                  "prevPath": "/courses/csintro1/about/script",
+                  "nextName": "Authors",
+                  "nextPath": "/courses/csintro1/about/authors"
+                },
+                {
+                  "name": "Authors",
+                  "subitems": [],
+                  "path": "/courses/csintro1/about/authors",
+                  "prevName": "For Teachers",
+                  "prevPath": "/courses/csintro1/about/teachers",
+                  "nextName": "Intro",
+                  "nextPath": "/courses/csintro1/intro"
+                }
+              ],
+              "path": "/courses/csintro1/about",
+              "prevName": "CS Intro 1",
+              "prevPath": "/courses/csintro1",
+              "nextName": "Programming Language",
+              "nextPath": "/courses/csintro1/about/script"
+            },
+            {
+              "name": "Intro",
+              "subitems": [
+                {
+                  "name": "Orientation to Makecode",
+                  "subitems": [],
+                  "path": "/courses/csintro1/intro/makecode-orientation",
+                  "prevName": "Intro",
+                  "prevPath": "/courses/csintro1/intro",
+                  "nextName": "Birthday Algorithm",
+                  "nextPath": "/courses/csintro1/intro/birthday-algorithm"
+                },
+                {
+                  "name": "Birthday Algorithm",
+                  "subitems": [],
+                  "path": "/courses/csintro1/intro/birthday-algorithm",
+                  "prevName": "Orientation to Makecode",
+                  "prevPath": "/courses/csintro1/intro/makecode-orientation",
+                  "nextName": "Sprites",
+                  "nextPath": "/courses/csintro1/intro/sprites"
+                },
+                {
+                  "name": "Sprites",
+                  "subitems": [],
+                  "path": "/courses/csintro1/intro/sprites",
+                  "prevName": "Birthday Algorithm",
+                  "prevPath": "/courses/csintro1/intro/birthday-algorithm",
+                  "nextName": "Unplugged: Rock Paper Scissors",
+                  "nextPath": "/courses/csintro1/intro/unplugged"
+                },
+                {
+                  "name": "Unplugged: Rock Paper Scissors",
+                  "subitems": [],
+                  "path": "/courses/csintro1/intro/unplugged",
+                  "prevName": "Sprites",
+                  "prevPath": "/courses/csintro1/intro/sprites",
+                  "nextName": "Variable Math",
+                  "nextPath": "/courses/csintro1/intro/variable-math"
+                },
+                {
+                  "name": "Variable Math",
+                  "subitems": [],
+                  "path": "/courses/csintro1/intro/variable-math",
+                  "prevName": "Unplugged: Rock Paper Scissors",
+                  "prevPath": "/courses/csintro1/intro/unplugged",
+                  "nextName": "Info Variables",
+                  "nextPath": "/courses/csintro1/intro/info"
+                },
+                {
+                  "name": "Info Variables",
+                  "subitems": [],
+                  "path": "/courses/csintro1/intro/info",
+                  "prevName": "Variable Math",
+                  "prevPath": "/courses/csintro1/intro/variable-math",
+                  "nextName": "Sprites",
+                  "nextPath": "/courses/csintro1/sprites"
+                }
+              ],
+              "path": "/courses/csintro1/intro",
+              "prevName": "Authors",
+              "prevPath": "/courses/csintro1/about/authors",
+              "nextName": "Orientation to Makecode",
+              "nextPath": "/courses/csintro1/intro/makecode-orientation"
+            },
+            {
+              "name": "Sprites",
+              "subitems": [
+                {
+                  "name": "Unplugged: Sink a Ship",
+                  "subitems": [],
+                  "path": "/courses/csintro1/sprites/unplugged",
+                  "prevName": "Sprites",
+                  "prevPath": "/courses/csintro1/sprites",
+                  "nextName": "Coordinate Walker",
+                  "nextPath": "/courses/csintro1/sprites/coordinate-walker"
+                },
+                {
+                  "name": "Coordinate Walker",
+                  "subitems": [],
+                  "path": "/courses/csintro1/sprites/coordinate-walker",
+                  "prevName": "Unplugged: Sink a Ship",
+                  "prevPath": "/courses/csintro1/sprites/unplugged",
+                  "nextName": "Collage",
+                  "nextPath": "/courses/csintro1/sprites/collage"
+                },
+                {
+                  "name": "Collage",
+                  "subitems": [],
+                  "path": "/courses/csintro1/sprites/collage",
+                  "prevName": "Coordinate Walker",
+                  "prevPath": "/courses/csintro1/sprites/coordinate-walker",
+                  "nextName": "Hello Sprite",
+                  "nextPath": "/courses/csintro1/sprites/hello-sprite"
+                },
+                {
+                  "name": "Hello Sprite",
+                  "subitems": [],
+                  "path": "/courses/csintro1/sprites/hello-sprite",
+                  "prevName": "Collage",
+                  "prevPath": "/courses/csintro1/sprites/collage",
+                  "nextName": "Characters and Stories",
+                  "nextPath": "/courses/csintro1/sprites/characters"
+                },
+                {
+                  "name": "Characters and Stories",
+                  "subitems": [],
+                  "path": "/courses/csintro1/sprites/characters",
+                  "prevName": "Hello Sprite",
+                  "prevPath": "/courses/csintro1/sprites/hello-sprite",
+                  "nextName": "Motion",
+                  "nextPath": "/courses/csintro1/motion"
+                }
+              ],
+              "path": "/courses/csintro1/sprites",
+              "prevName": "Info Variables",
+              "prevPath": "/courses/csintro1/intro/info",
+              "nextName": "Unplugged: Sink a Ship",
+              "nextPath": "/courses/csintro1/sprites/unplugged"
+            },
+            {
+              "name": "Motion",
+              "subitems": [
+                {
+                  "name": "Unplugged: Using a Controller",
+                  "subitems": [],
+                  "path": "/courses/csintro1/motion/unplugged",
+                  "prevName": "Motion",
+                  "prevPath": "/courses/csintro1/motion",
+                  "nextName": "Sprite Motion Event",
+                  "nextPath": "/courses/csintro1/motion/sprite-motion-event"
+                },
+                {
+                  "name": "Sprite Motion Event",
+                  "subitems": [],
+                  "path": "/courses/csintro1/motion/sprite-motion-event",
+                  "prevName": "Unplugged: Using a Controller",
+                  "prevPath": "/courses/csintro1/motion/unplugged",
+                  "nextName": "Overlap Section 1",
+                  "nextPath": "/courses/csintro1/motion/overlap1"
+                },
+                {
+                  "name": "Overlap Section 1",
+                  "subitems": [],
+                  "path": "/courses/csintro1/motion/overlap1",
+                  "prevName": "Sprite Motion Event",
+                  "prevPath": "/courses/csintro1/motion/sprite-motion-event",
+                  "nextName": "Random",
+                  "nextPath": "/courses/csintro1/motion/random"
+                },
+                {
+                  "name": "Random",
+                  "subitems": [],
+                  "path": "/courses/csintro1/motion/random",
+                  "prevName": "Overlap Section 1",
+                  "prevPath": "/courses/csintro1/motion/overlap1",
+                  "nextName": "Overlap Section 2",
+                  "nextPath": "/courses/csintro1/motion/overlap2"
+                },
+                {
+                  "name": "Overlap Section 2",
+                  "subitems": [],
+                  "path": "/courses/csintro1/motion/overlap2",
+                  "prevName": "Random",
+                  "prevPath": "/courses/csintro1/motion/random",
+                  "nextName": "Create Sprite & On Create",
+                  "nextPath": "/courses/csintro1/motion/create-on-create-sprites"
+                },
+                {
+                  "name": "Create Sprite & On Create",
+                  "subitems": [],
+                  "path": "/courses/csintro1/motion/create-on-create-sprites",
+                  "prevName": "Overlap Section 2",
+                  "prevPath": "/courses/csintro1/motion/overlap2",
+                  "nextName": "Project",
+                  "nextPath": "/courses/csintro1/motion/project"
+                },
+                {
+                  "name": "Project",
+                  "subitems": [],
+                  "path": "/courses/csintro1/motion/project",
+                  "prevName": "Create Sprite & On Create",
+                  "prevPath": "/courses/csintro1/motion/create-on-create-sprites",
+                  "nextName": "Loops",
+                  "nextPath": "/courses/csintro1/loops"
+                }
+              ],
+              "path": "/courses/csintro1/motion",
+              "prevName": "Characters and Stories",
+              "prevPath": "/courses/csintro1/sprites/characters",
+              "nextName": "Unplugged: Using a Controller",
+              "nextPath": "/courses/csintro1/motion/unplugged"
+            },
+            {
+              "name": "Loops",
+              "subitems": [
+                {
+                  "name": "Intro",
+                  "subitems": [],
+                  "path": "/courses/csintro1/loops/intro",
+                  "prevName": "Loops",
+                  "prevPath": "/courses/csintro1/loops",
+                  "nextName": "Unplugged: Circle a Chair",
+                  "nextPath": "/courses/csintro1/loops/unplugged"
+                },
+                {
+                  "name": "Unplugged: Circle a Chair",
+                  "subitems": [],
+                  "path": "/courses/csintro1/loops/unplugged",
+                  "prevName": "Intro",
+                  "prevPath": "/courses/csintro1/loops/intro",
+                  "nextName": "Increment Loop",
+                  "nextPath": "/courses/csintro1/loops/increment-loop"
+                },
+                {
+                  "name": "Increment Loop",
+                  "subitems": [],
+                  "path": "/courses/csintro1/loops/increment-loop",
+                  "prevName": "Unplugged: Circle a Chair",
+                  "prevPath": "/courses/csintro1/loops/unplugged",
+                  "nextName": "Projectiles",
+                  "nextPath": "/courses/csintro1/loops/projectiles"
+                },
+                {
+                  "name": "Projectiles",
+                  "subitems": [],
+                  "path": "/courses/csintro1/loops/projectiles",
+                  "prevName": "Increment Loop",
+                  "prevPath": "/courses/csintro1/loops/increment-loop",
+                  "nextName": "Projectiles from Sprites",
+                  "nextPath": "/courses/csintro1/loops/projectile-from"
+                },
+                {
+                  "name": "Projectiles from Sprites",
+                  "subitems": [],
+                  "path": "/courses/csintro1/loops/projectile-from",
+                  "prevName": "Projectiles",
+                  "prevPath": "/courses/csintro1/loops/projectiles",
+                  "nextName": "Physics",
+                  "nextPath": "/courses/csintro1/loops/physics"
+                },
+                {
+                  "name": "Physics",
+                  "subitems": [],
+                  "path": "/courses/csintro1/loops/physics",
+                  "prevName": "Projectiles from Sprites",
+                  "prevPath": "/courses/csintro1/loops/projectile-from",
+                  "nextName": "Project",
+                  "nextPath": "/courses/csintro1/loops/project"
+                },
+                {
+                  "name": "Project",
+                  "subitems": [],
+                  "path": "/courses/csintro1/loops/project",
+                  "prevName": "Physics",
+                  "prevPath": "/courses/csintro1/loops/physics",
+                  "nextName": "Review",
+                  "nextPath": "/courses/csintro1/review"
+                }
+              ],
+              "path": "/courses/csintro1/loops",
+              "prevName": "Project",
+              "prevPath": "/courses/csintro1/motion/project",
+              "nextName": "Intro",
+              "nextPath": "/courses/csintro1/loops/intro"
+            },
+            {
+              "name": "Review",
+              "subitems": [
+                {
+                  "name": "Extend \"touch the button\"",
+                  "subitems": [],
+                  "path": "/courses/csintro1/review/touch-the-button",
+                  "prevName": "Review",
+                  "prevPath": "/courses/csintro1/review",
+                  "nextName": "Paparazzi",
+                  "nextPath": "/courses/csintro1/review/paparazzi"
+                },
+                {
+                  "name": "Paparazzi",
+                  "subitems": [],
+                  "path": "/courses/csintro1/review/paparazzi",
+                  "prevName": "Extend \"touch the button\"",
+                  "prevPath": "/courses/csintro1/review/touch-the-button",
+                  "nextName": "Asteroid Blaster",
+                  "nextPath": "/courses/csintro1/review/asteroid-blaster"
+                },
+                {
+                  "name": "Asteroid Blaster",
+                  "subitems": [],
+                  "path": "/courses/csintro1/review/asteroid-blaster",
+                  "prevName": "Paparazzi",
+                  "prevPath": "/courses/csintro1/review/paparazzi",
+                  "nextName": "Baseball Catching",
+                  "nextPath": "/courses/csintro1/review/baseball-catching"
+                },
+                {
+                  "name": "Baseball Catching",
+                  "subitems": [],
+                  "path": "/courses/csintro1/review/baseball-catching",
+                  "prevName": "Asteroid Blaster",
+                  "prevPath": "/courses/csintro1/review/asteroid-blaster",
+                  "nextName": "Dodgey Duck",
+                  "nextPath": "/courses/csintro1/review/dodgey-duck"
+                },
+                {
+                  "name": "Dodgey Duck",
+                  "subitems": [],
+                  "path": "/courses/csintro1/review/dodgey-duck",
+                  "prevName": "Baseball Catching",
+                  "prevPath": "/courses/csintro1/review/baseball-catching",
+                  "nextName": "Final Project",
+                  "nextPath": "/courses/csintro1/project/final"
+                }
+              ],
+              "path": "/courses/csintro1/review",
+              "prevName": "Project",
+              "prevPath": "/courses/csintro1/loops/project",
+              "nextName": "Extend \"touch the button\"",
+              "nextPath": "/courses/csintro1/review/touch-the-button"
+            },
+            {
+              "name": "Final Project",
+              "subitems": [],
+              "path": "/courses/csintro1/project/final",
+              "prevName": "Dodgey Duck",
+              "prevPath": "/courses/csintro1/review/dodgey-duck",
+              "nextName": "CS Intro 2",
+              "nextPath": "/courses/csintro2"
+            }
+          ],
+          "path": "/courses/csintro1",
+          "prevName": "Courses",
+          "prevPath": "/courses",
+          "nextName": "About",
+          "nextPath": "/courses/csintro1/about"
+        },
+        {
+          "name": "CS Intro 2",
+          "subitems": [
+            {
+              "name": "About",
+              "subitems": [
+                {
+                  "name": "Programming Language",
+                  "subitems": [],
+                  "path": "/courses/csintro2/about/script",
+                  "prevName": "About",
+                  "prevPath": "/courses/csintro2/about",
+                  "nextName": "For Teachers",
+                  "nextPath": "/courses/csintro2/about/teachers"
+                },
+                {
+                  "name": "For Teachers",
+                  "subitems": [],
+                  "path": "/courses/csintro2/about/teachers",
+                  "prevName": "Programming Language",
+                  "prevPath": "/courses/csintro2/about/script",
+                  "nextName": "Authors",
+                  "nextPath": "/courses/csintro2/about/authors"
+                },
+                {
+                  "name": "Authors",
+                  "subitems": [],
+                  "path": "/courses/csintro2/about/authors",
+                  "prevName": "For Teachers",
+                  "prevPath": "/courses/csintro2/about/teachers",
+                  "nextName": "Functions",
+                  "nextPath": "/courses/csintro2/functions"
+                }
+              ],
+              "path": "/courses/csintro2/about",
+              "prevName": "CS Intro 2",
+              "prevPath": "/courses/csintro2",
+              "nextName": "Programming Language",
+              "nextPath": "/courses/csintro2/about/script"
+            },
+            {
+              "name": "Functions",
+              "subitems": [
+                {
+                  "name": "Unplugged: Making a Sandwich",
+                  "subitems": [],
+                  "path": "/courses/csintro2/functions/unplugged",
+                  "prevName": "Functions",
+                  "prevPath": "/courses/csintro2/functions",
+                  "nextName": "Intro to Functions",
+                  "nextPath": "/courses/csintro2/functions/intro"
+                },
+                {
+                  "name": "Intro to Functions",
+                  "subitems": [],
+                  "path": "/courses/csintro2/functions/intro",
+                  "prevName": "Unplugged: Making a Sandwich",
+                  "prevPath": "/courses/csintro2/functions/unplugged",
+                  "nextName": "Reducing Redundancy with Functions",
+                  "nextPath": "/courses/csintro2/functions/redundancy"
+                },
+                {
+                  "name": "Reducing Redundancy with Functions",
+                  "subitems": [],
+                  "path": "/courses/csintro2/functions/redundancy",
+                  "prevName": "Intro to Functions",
+                  "prevPath": "/courses/csintro2/functions/intro",
+                  "nextName": "Using Extensions",
+                  "nextPath": "/courses/csintro2/functions/extensions"
+                },
+                {
+                  "name": "Using Extensions",
+                  "subitems": [],
+                  "path": "/courses/csintro2/functions/extensions",
+                  "prevName": "Reducing Redundancy with Functions",
+                  "prevPath": "/courses/csintro2/functions/redundancy",
+                  "nextName": "Project",
+                  "nextPath": "/courses/csintro2/functions/project"
+                },
+                {
+                  "name": "Project",
+                  "subitems": [],
+                  "path": "/courses/csintro2/functions/project",
+                  "prevName": "Using Extensions",
+                  "prevPath": "/courses/csintro2/functions/extensions",
+                  "nextName": "Tilemap",
+                  "nextPath": "/courses/csintro2/tilemap"
+                }
+              ],
+              "path": "/courses/csintro2/functions",
+              "prevName": "Authors",
+              "prevPath": "/courses/csintro2/about/authors",
+              "nextName": "Unplugged: Making a Sandwich",
+              "nextPath": "/courses/csintro2/functions/unplugged"
+            },
+            {
+              "name": "Tilemap",
+              "subitems": [
+                {
+                  "name": "Intro",
+                  "subitems": [],
+                  "path": "/courses/csintro2/tilemap/intro",
+                  "prevName": "Tilemap",
+                  "prevPath": "/courses/csintro2/tilemap",
+                  "nextName": "Interactions",
+                  "nextPath": "/courses/csintro2/tilemap/interactions"
+                },
+                {
+                  "name": "Interactions",
+                  "subitems": [],
+                  "path": "/courses/csintro2/tilemap/interactions",
+                  "prevName": "Intro",
+                  "prevPath": "/courses/csintro2/tilemap/intro",
+                  "nextName": "Using Corgi Extension",
+                  "nextPath": "/courses/csintro2/tilemap/extensions"
+                },
+                {
+                  "name": "Using Corgi Extension",
+                  "subitems": [],
+                  "path": "/courses/csintro2/tilemap/extensions",
+                  "prevName": "Interactions",
+                  "prevPath": "/courses/csintro2/tilemap/interactions",
+                  "nextName": "Project",
+                  "nextPath": "/courses/csintro2/tilemap/project"
+                },
+                {
+                  "name": "Project",
+                  "subitems": [],
+                  "path": "/courses/csintro2/tilemap/project",
+                  "prevName": "Using Corgi Extension",
+                  "prevPath": "/courses/csintro2/tilemap/extensions",
+                  "nextName": "Logic",
+                  "nextPath": "/courses/csintro2/logic"
+                }
+              ],
+              "path": "/courses/csintro2/tilemap",
+              "prevName": "Project",
+              "prevPath": "/courses/csintro2/functions/project",
+              "nextName": "Intro",
+              "nextPath": "/courses/csintro2/tilemap/intro"
+            },
+            {
+              "name": "Logic",
+              "subitems": [
+                {
+                  "name": "Introduction",
+                  "subitems": [],
+                  "path": "/courses/csintro2/logic/intro",
+                  "prevName": "Logic",
+                  "prevPath": "/courses/csintro2/logic",
+                  "nextName": "If and Else",
+                  "nextPath": "/courses/csintro2/logic/if-else"
+                },
+                {
+                  "name": "If and Else",
+                  "subitems": [],
+                  "path": "/courses/csintro2/logic/if-else",
+                  "prevName": "Introduction",
+                  "prevPath": "/courses/csintro2/logic/intro",
+                  "nextName": "Multiplayer",
+                  "nextPath": "/courses/csintro2/logic/multiplayer"
+                },
+                {
+                  "name": "Multiplayer",
+                  "subitems": [],
+                  "path": "/courses/csintro2/logic/multiplayer",
+                  "prevName": "If and Else",
+                  "prevPath": "/courses/csintro2/logic/if-else",
+                  "nextName": "Booleans",
+                  "nextPath": "/courses/csintro2/logic/booleans"
+                },
+                {
+                  "name": "Booleans",
+                  "subitems": [],
+                  "path": "/courses/csintro2/logic/booleans",
+                  "prevName": "Multiplayer",
+                  "prevPath": "/courses/csintro2/logic/multiplayer",
+                  "nextName": "Validating User Input",
+                  "nextPath": "/courses/csintro2/logic/user-input"
+                },
+                {
+                  "name": "Validating User Input",
+                  "subitems": [],
+                  "path": "/courses/csintro2/logic/user-input",
+                  "prevName": "Booleans",
+                  "prevPath": "/courses/csintro2/logic/booleans",
+                  "nextName": "Logic in Loops",
+                  "nextPath": "/courses/csintro2/logic/while"
+                },
+                {
+                  "name": "Logic in Loops",
+                  "subitems": [],
+                  "path": "/courses/csintro2/logic/while",
+                  "prevName": "Validating User Input",
+                  "prevPath": "/courses/csintro2/logic/user-input",
+                  "nextName": "Project",
+                  "nextPath": "/courses/csintro2/logic/project"
+                },
+                {
+                  "name": "Project",
+                  "subitems": [],
+                  "path": "/courses/csintro2/logic/project",
+                  "prevName": "Logic in Loops",
+                  "prevPath": "/courses/csintro2/logic/while",
+                  "nextName": "Arrays",
+                  "nextPath": "/courses/csintro2/arrays"
+                }
+              ],
+              "path": "/courses/csintro2/logic",
+              "prevName": "Project",
+              "prevPath": "/courses/csintro2/tilemap/project",
+              "nextName": "Introduction",
+              "nextPath": "/courses/csintro2/logic/intro"
+            },
+            {
+              "name": "Arrays",
+              "subitems": [
+                {
+                  "name": "Intro",
+                  "subitems": [],
+                  "path": "/courses/csintro2/arrays/intro",
+                  "prevName": "Arrays",
+                  "prevPath": "/courses/csintro2/arrays",
+                  "nextName": "String Arrays",
+                  "nextPath": "/courses/csintro2/arrays/string"
+                },
+                {
+                  "name": "String Arrays",
+                  "subitems": [],
+                  "path": "/courses/csintro2/arrays/string",
+                  "prevName": "Intro",
+                  "prevPath": "/courses/csintro2/arrays/intro",
+                  "nextName": "Sprite Arrays",
+                  "nextPath": "/courses/csintro2/arrays/sprites"
+                },
+                {
+                  "name": "Sprite Arrays",
+                  "subitems": [],
+                  "path": "/courses/csintro2/arrays/sprites",
+                  "prevName": "String Arrays",
+                  "prevPath": "/courses/csintro2/arrays/string",
+                  "nextName": "Tile Arrays",
+                  "nextPath": "/courses/csintro2/arrays/tilemap"
+                },
+                {
+                  "name": "Tile Arrays",
+                  "subitems": [],
+                  "path": "/courses/csintro2/arrays/tilemap",
+                  "prevName": "Sprite Arrays",
+                  "prevPath": "/courses/csintro2/arrays/sprites",
+                  "nextName": "Project",
+                  "nextPath": "/courses/csintro2/arrays/project"
+                },
+                {
+                  "name": "Project",
+                  "subitems": [],
+                  "path": "/courses/csintro2/arrays/project",
+                  "prevName": "Tile Arrays",
+                  "prevPath": "/courses/csintro2/arrays/tilemap",
+                  "nextName": "Review",
+                  "nextPath": "/courses/csintro2/review"
+                }
+              ],
+              "path": "/courses/csintro2/arrays",
+              "prevName": "Project",
+              "prevPath": "/courses/csintro2/logic/project",
+              "nextName": "Intro",
+              "nextPath": "/courses/csintro2/arrays/intro"
+            },
+            {
+              "name": "Review",
+              "subitems": [
+                {
+                  "name": "Side Scroller",
+                  "subitems": [],
+                  "path": "/courses/csintro2/review/side-scroller",
+                  "prevName": "Review",
+                  "prevPath": "/courses/csintro2/review",
+                  "nextName": "Blockbuster Film",
+                  "nextPath": "/courses/csintro2/review/blockbuster"
+                },
+                {
+                  "name": "Blockbuster Film",
+                  "subitems": [],
+                  "path": "/courses/csintro2/review/blockbuster",
+                  "prevName": "Side Scroller",
+                  "prevPath": "/courses/csintro2/review/side-scroller",
+                  "nextName": "Functionally the Same",
+                  "nextPath": "/courses/csintro2/review/functions"
+                },
+                {
+                  "name": "Functionally the Same",
+                  "subitems": [],
+                  "path": "/courses/csintro2/review/functions",
+                  "prevName": "Blockbuster Film",
+                  "prevPath": "/courses/csintro2/review/blockbuster",
+                  "nextName": "Final Project",
+                  "nextPath": "/courses/csintro2/final-project"
+                }
+              ],
+              "path": "/courses/csintro2/review",
+              "prevName": "Project",
+              "prevPath": "/courses/csintro2/arrays/project",
+              "nextName": "Side Scroller",
+              "nextPath": "/courses/csintro2/review/side-scroller"
+            },
+            {
+              "name": "Final Project",
+              "subitems": [],
+              "path": "/courses/csintro2/final-project",
+              "prevName": "Functionally the Same",
+              "prevPath": "/courses/csintro2/review/functions",
+              "nextName": "JavaScript Games",
+              "nextPath": "/javascript-games"
+            }
+          ],
+          "path": "/courses/csintro2",
+          "prevName": "Final Project",
+          "prevPath": "/courses/csintro1/project/final",
+          "nextName": "About",
+          "nextPath": "/courses/csintro2/about"
+        }
+      ],
+      "path": "/courses",
+      "prevName": "Jewels",
+      "prevPath": "/examples/jewels",
+      "nextName": "CS Intro 1",
+      "nextPath": "/courses/csintro1"
+    },
+    {
+      "name": "JavaScript Games",
+      "subitems": [
+        {
+          "name": "Asteroids",
+          "subitems": [],
+          "path": "/examples/asteroids",
+          "prevName": "JavaScript Games",
+          "prevPath": "/javascript-games",
+          "nextName": "Bouncer Bucket",
+          "nextPath": "/examples/bouncer-bucket"
+        },
+        {
+          "name": "Bouncer Bucket",
+          "subitems": [],
+          "path": "/examples/bouncer-bucket",
+          "prevName": "Asteroids",
+          "prevPath": "/examples/asteroids",
+          "nextName": "Car Race",
+          "nextPath": "/examples/car-race"
+        },
+        {
+          "name": "Car Race",
+          "subitems": [],
+          "path": "/examples/car-race",
+          "prevName": "Bouncer Bucket",
+          "prevPath": "/examples/bouncer-bucket",
+          "nextName": "Collisions",
+          "nextPath": "/examples/collisions"
+        },
+        {
+          "name": "Collisions",
+          "subitems": [],
+          "path": "/examples/collisions",
+          "prevName": "Car Race",
+          "prevPath": "/examples/car-race",
+          "nextName": "Duck",
+          "nextPath": "/examples/duck"
+        },
+        {
+          "name": "Duck",
+          "subitems": [],
+          "path": "/examples/duck",
+          "prevName": "Collisions",
+          "prevPath": "/examples/collisions",
+          "nextName": "Guess the Letter",
+          "nextPath": "/examples/guess-the-letter"
+        },
+        {
+          "name": "Guess the Letter",
+          "subitems": [],
+          "path": "/examples/guess-the-letter",
+          "prevName": "Duck",
+          "prevPath": "/examples/duck",
+          "nextName": "Jumper",
+          "nextPath": "/examples/jumper"
+        },
+        {
+          "name": "Jumper",
+          "subitems": [],
+          "path": "/examples/jumper",
+          "prevName": "Guess the Letter",
+          "prevPath": "/examples/guess-the-letter",
+          "nextName": "Mega Bounce",
+          "nextPath": "/examples/mega-bounce"
+        },
+        {
+          "name": "Mega Bounce",
+          "subitems": [],
+          "path": "/examples/mega-bounce",
+          "prevName": "Jumper",
+          "prevPath": "/examples/jumper",
+          "nextName": "Pallete",
+          "nextPath": "/examples/palette"
+        },
+        {
+          "name": "Pallete",
+          "subitems": [],
+          "path": "/examples/palette",
+          "prevName": "Mega Bounce",
+          "prevPath": "/examples/mega-bounce",
+          "nextName": "Runner",
+          "nextPath": "/examples/runner"
+        },
+        {
+          "name": "Runner",
+          "subitems": [],
+          "path": "/examples/runner",
+          "prevName": "Pallete",
+          "prevPath": "/examples/palette",
+          "nextName": "Snake",
+          "nextPath": "/examples/snake"
+        },
+        {
+          "name": "Snake",
+          "subitems": [],
+          "path": "/examples/snake",
+          "prevName": "Runner",
+          "prevPath": "/examples/runner",
+          "nextName": "Sorting",
+          "nextPath": "/examples/sorting"
+        },
+        {
+          "name": "Sorting",
+          "subitems": [],
+          "path": "/examples/sorting",
+          "prevName": "Snake",
+          "prevPath": "/examples/snake",
+          "nextName": "Reference",
+          "nextPath": "/reference"
+        }
+      ],
+      "path": "/javascript-games",
+      "prevName": "Final Project",
+      "prevPath": "/courses/csintro2/final-project",
+      "nextName": "Asteroids",
+      "nextPath": "/examples/asteroids"
+    },
+    {
+      "name": "Reference",
+      "subitems": [
+        {
+          "name": "game",
+          "subitems": [],
+          "path": "/reference/game",
+          "prevName": "Reference",
+          "prevPath": "/reference",
+          "nextName": "sprites",
+          "nextPath": "/reference/sprites"
+        },
+        {
+          "name": "sprites",
+          "subitems": [],
+          "path": "/reference/sprites",
+          "prevName": "game",
+          "prevPath": "/reference/game",
+          "nextName": "controller",
+          "nextPath": "/reference/controller"
+        },
+        {
+          "name": "controller",
+          "subitems": [],
+          "path": "/reference/controller",
+          "prevName": "sprites",
+          "prevPath": "/reference/sprites",
+          "nextName": "music",
+          "nextPath": "/reference/music"
+        },
+        {
+          "name": "music",
+          "subitems": [],
+          "path": "/reference/music",
+          "prevName": "controller",
+          "prevPath": "/reference/controller",
+          "nextName": "scene",
+          "nextPath": "/reference/scene"
+        },
+        {
+          "name": "scene",
+          "subitems": [],
+          "path": "/reference/scene",
+          "prevName": "music",
+          "prevPath": "/reference/music",
+          "nextName": "info",
+          "nextPath": "/reference/info"
+        },
+        {
+          "name": "info",
+          "subitems": [],
+          "path": "/reference/info",
+          "prevName": "scene",
+          "prevPath": "/reference/scene",
+          "nextName": "images",
+          "nextPath": "/reference/images"
+        },
+        {
+          "name": "images",
+          "subitems": [],
+          "path": "/reference/images",
+          "prevName": "info",
+          "prevPath": "/reference/info",
+          "nextName": "Blocks",
+          "nextPath": "/blocks"
+        }
+      ],
+      "path": "/reference",
+      "prevName": "Sorting",
+      "prevPath": "/examples/sorting",
+      "nextName": "game",
+      "nextPath": "/reference/game"
+    },
+    {
+      "name": "Blocks",
+      "subitems": [
+        {
+          "name": "On Start",
+          "subitems": [],
+          "path": "/blocks/on-start",
+          "prevName": "Blocks",
+          "prevPath": "/blocks",
+          "nextName": "Loops",
+          "nextPath": "/blocks/loops"
+        },
+        {
+          "name": "Loops",
+          "subitems": [
+            {
+              "name": "repeat",
+              "subitems": [],
+              "path": "/blocks/loops/repeat",
+              "prevName": "Loops",
+              "prevPath": "/blocks/loops",
+              "nextName": "for",
+              "nextPath": "/blocks/loops/for"
+            },
+            {
+              "name": "for",
+              "subitems": [],
+              "path": "/blocks/loops/for",
+              "prevName": "repeat",
+              "prevPath": "/blocks/loops/repeat",
+              "nextName": "while",
+              "nextPath": "/blocks/loops/while"
+            },
+            {
+              "name": "while",
+              "subitems": [],
+              "path": "/blocks/loops/while",
+              "prevName": "for",
+              "prevPath": "/blocks/loops/for",
+              "nextName": "Logic",
+              "nextPath": "/blocks/logic"
+            }
+          ],
+          "path": "/blocks/loops",
+          "prevName": "On Start",
+          "prevPath": "/blocks/on-start",
+          "nextName": "repeat",
+          "nextPath": "/blocks/loops/repeat"
+        },
+        {
+          "name": "Logic",
+          "subitems": [
+            {
+              "name": "if",
+              "subitems": [],
+              "path": "/blocks/logic/if",
+              "prevName": "Logic",
+              "prevPath": "/blocks/logic",
+              "nextName": "Boolean",
+              "nextPath": "/blocks/logic/boolean"
+            },
+            {
+              "name": "Boolean",
+              "subitems": [],
+              "path": "/blocks/logic/boolean",
+              "prevName": "if",
+              "prevPath": "/blocks/logic/if",
+              "nextName": "Variables",
+              "nextPath": "/blocks/variables"
+            }
+          ],
+          "path": "/blocks/logic",
+          "prevName": "while",
+          "prevPath": "/blocks/loops/while",
+          "nextName": "if",
+          "nextPath": "/blocks/logic/if"
+        },
+        {
+          "name": "Variables",
+          "subitems": [
+            {
+              "name": "assign",
+              "subitems": [],
+              "path": "/blocks/variables/assign",
+              "prevName": "Variables",
+              "prevPath": "/blocks/variables",
+              "nextName": "change var",
+              "nextPath": "/blocks/variables/change"
+            },
+            {
+              "name": "change var",
+              "subitems": [],
+              "path": "/blocks/variables/change",
+              "prevName": "assign",
+              "prevPath": "/blocks/variables/assign",
+              "nextName": "var",
+              "nextPath": "/blocks/variables/var"
+            },
+            {
+              "name": "var",
+              "subitems": [],
+              "path": "/blocks/variables/var",
+              "prevName": "change var",
+              "prevPath": "/blocks/variables/change",
+              "nextName": "Math",
+              "nextPath": "/blocks/math"
+            }
+          ],
+          "path": "/blocks/variables",
+          "prevName": "Boolean",
+          "prevPath": "/blocks/logic/boolean",
+          "nextName": "assign",
+          "nextPath": "/blocks/variables/assign"
+        },
+        {
+          "name": "Math",
+          "subitems": [],
+          "path": "/blocks/math",
+          "prevName": "var",
+          "prevPath": "/blocks/variables/var",
+          "nextName": "JavaScript blocks",
+          "nextPath": "/blocks/javascript-blocks"
+        },
+        {
+          "name": "JavaScript blocks",
+          "subitems": [],
+          "path": "/blocks/javascript-blocks",
+          "prevName": "Math",
+          "prevPath": "/blocks/math",
+          "nextName": "Custom blocks",
+          "nextPath": "/blocks/custom"
+        },
+        {
+          "name": "Custom blocks",
+          "subitems": [],
+          "path": "/blocks/custom",
+          "prevName": "JavaScript blocks",
+          "prevPath": "/blocks/javascript-blocks",
+          "nextName": "JavaScript",
+          "nextPath": "/javascript"
+        }
+      ],
+      "path": "/blocks",
+      "prevName": "images",
+      "prevPath": "/reference/images",
+      "nextName": "On Start",
+      "nextPath": "/blocks/on-start"
+    },
+    {
+      "name": "JavaScript",
+      "subitems": [
+        {
+          "name": "Calling",
+          "subitems": [],
+          "path": "/javascript/call",
+          "prevName": "JavaScript",
+          "prevPath": "/javascript",
+          "nextName": "Sequencing",
+          "nextPath": "/javascript/sequence"
+        },
+        {
+          "name": "Sequencing",
+          "subitems": [],
+          "path": "/javascript/sequence",
+          "prevName": "Calling",
+          "prevPath": "/javascript/call",
+          "nextName": "Variables",
+          "nextPath": "/javascript/variables"
+        },
+        {
+          "name": "Variables",
+          "subitems": [],
+          "path": "/javascript/variables",
+          "prevName": "Sequencing",
+          "prevPath": "/javascript/sequence",
+          "nextName": "Operators",
+          "nextPath": "/javascript/operators"
+        },
+        {
+          "name": "Operators",
+          "subitems": [],
+          "path": "/javascript/operators",
+          "prevName": "Variables",
+          "prevPath": "/javascript/variables",
+          "nextName": "Statements",
+          "nextPath": "/javascript/statements"
+        },
+        {
+          "name": "Statements",
+          "subitems": [],
+          "path": "/javascript/statements",
+          "prevName": "Operators",
+          "prevPath": "/javascript/operators",
+          "nextName": "Functions",
+          "nextPath": "/javascript/functions"
+        },
+        {
+          "name": "Functions",
+          "subitems": [],
+          "path": "/javascript/functions",
+          "prevName": "Statements",
+          "prevPath": "/javascript/statements",
+          "nextName": "Types",
+          "nextPath": "/javascript/types"
+        },
+        {
+          "name": "Types",
+          "subitems": [],
+          "path": "/javascript/types",
+          "prevName": "Functions",
+          "prevPath": "/javascript/functions",
+          "nextName": "Classes",
+          "nextPath": "/javascript/classes"
+        },
+        {
+          "name": "Classes",
+          "subitems": [],
+          "path": "/javascript/classes",
+          "prevName": "Types",
+          "prevPath": "/javascript/types",
+          "nextName": "Interfaces",
+          "nextPath": "/javascript/interfaces"
+        },
+        {
+          "name": "Interfaces",
+          "subitems": [],
+          "path": "/javascript/interfaces",
+          "prevName": "Classes",
+          "prevPath": "/javascript/classes",
+          "nextName": "Generics",
+          "nextPath": "/javascript/generics"
+        },
+        {
+          "name": "Generics",
+          "subitems": [],
+          "path": "/javascript/generics",
+          "prevName": "Interfaces",
+          "prevPath": "/javascript/interfaces",
+          "nextName": "Types",
+          "nextPath": "/types"
+        }
+      ],
+      "path": "/javascript",
+      "prevName": "Custom blocks",
+      "prevPath": "/blocks/custom",
+      "nextName": "Calling",
+      "nextPath": "/javascript/call"
+    },
+    {
+      "name": "Types",
+      "subitems": [
+        {
+          "name": "Number",
+          "subitems": [],
+          "path": "/types/number",
+          "prevName": "Types",
+          "prevPath": "/types",
+          "nextName": "String",
+          "nextPath": "/types/string"
+        },
+        {
+          "name": "String",
+          "subitems": [],
+          "path": "/types/string",
+          "prevName": "Number",
+          "prevPath": "/types/number",
+          "nextName": "Boolean",
+          "nextPath": "/types/boolean"
+        },
+        {
+          "name": "Boolean",
+          "subitems": [],
+          "path": "/types/boolean",
+          "prevName": "String",
+          "prevPath": "/types/string",
+          "nextName": "Array",
+          "nextPath": "/types/array"
+        },
+        {
+          "name": "Array",
+          "subitems": [],
+          "path": "/types/array",
+          "prevName": "Boolean",
+          "prevPath": "/types/boolean",
+          "nextName": "Function",
+          "nextPath": "/types/function"
+        },
+        {
+          "name": "Function",
+          "subitems": [],
+          "path": "/types/function",
+          "prevName": "Array",
+          "prevPath": "/types/array",
+          "nextName": "Image",
+          "nextPath": "/types/image"
+        },
+        {
+          "name": "Image",
+          "subitems": [],
+          "path": "/types/image",
+          "prevName": "Function",
+          "prevPath": "/types/function",
+          "nextName": "Sprite",
+          "nextPath": "/types/sprite"
+        },
+        {
+          "name": "Sprite",
+          "subitems": [],
+          "path": "/types/sprite",
+          "prevName": "Image",
+          "prevPath": "/types/image",
+          "nextName": "About",
+          "nextPath": "/about"
+        }
+      ],
+      "path": "/types",
+      "prevName": "Generics",
+      "prevPath": "/javascript/generics",
+      "nextName": "Number",
+      "nextPath": "/types/number"
+    },
+    {
+      "name": "",
+      "subitems": [
+        {
+          "name": "About",
+          "subitems": [],
+          "path": "/about",
+          "prevName": "Sprite",
+          "prevPath": "/types/sprite",
+          "nextName": "Support",
+          "nextPath": "/support"
+        },
+        {
+          "name": "Support",
+          "subitems": [],
+          "path": "/support",
+          "prevName": "About",
+          "prevPath": "/about",
+          "nextName": "Translate",
+          "nextPath": "/translate"
+        },
+        {
+          "name": "Translate",
+          "subitems": [],
+          "path": "/translate",
+          "prevName": "Support",
+          "prevPath": "/support",
+          "nextName": "Sharing projects",
+          "nextPath": "/share"
+        },
+        {
+          "name": "Sharing projects",
+          "subitems": [],
+          "path": "/share",
+          "prevName": "Translate",
+          "prevPath": "/translate",
+          "nextName": "Offline support",
+          "nextPath": "/offline"
+        },
+        {
+          "name": "Offline support",
+          "subitems": [],
+          "path": "/offline",
+          "prevName": "Sharing projects",
+          "prevPath": "/share",
+          "nextName": "Save",
+          "nextPath": "/save"
+        },
+        {
+          "name": "Save",
+          "subitems": [],
+          "path": "/save",
+          "prevName": "Offline support",
+          "prevPath": "/offline",
+          "nextName": "Command Line Interface",
+          "nextPath": "/cli"
+        }
+      ],
+      "prevName": "Sprite",
+      "prevPath": "/types/sprite"
+    },
+    {
+      "name": "",
+      "subitems": [
+        {
+          "name": "Command Line Interface",
+          "subitems": [],
+          "path": "/cli",
+          "prevName": "Save",
+          "prevPath": "/save",
+          "nextName": "Visual Studio Code support",
+          "nextPath": "/code"
+        },
+        {
+          "name": "Visual Studio Code support",
+          "subitems": [],
+          "path": "/code",
+          "prevName": "Command Line Interface",
+          "prevPath": "/cli",
+          "nextName": "Blocks Embed",
+          "nextPath": "/blocks-embed"
+        },
+        {
+          "name": "Blocks Embed",
+          "subitems": [],
+          "path": "/blocks-embed",
+          "prevName": "Visual Studio Code support",
+          "prevPath": "/code"
+        }
+      ],
+      "prevName": "Save",
+      "prevPath": "/save"
+    }
+  ],
+  "id": "arcade",
+  "title": "MakeCode Arcade",
+  "name": "arcade",
+  "htmlDocIncludes": {}
+}
