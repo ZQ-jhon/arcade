@@ -36,6 +36,7 @@
     "pxt-core": "5.0.1"
   },
   "scripts": {
-    "serve": "node node_modules/pxt-core/built/pxt.js serve"
+    "serve": "node node_modules/pxt-core/built/pxt.js serve",
+    "deploy": "npx pxt staticpkg --githubpages"
   }
 }
