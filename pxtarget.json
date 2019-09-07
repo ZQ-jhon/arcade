@@ -137,21 +137,21 @@
         "dynamicBoardDefinition": true
     },
     "appTheme": {
-        "logoUrl": "https://github.com/Microsoft/pxt-32",
-        "logo": "./static/logo.svg",
-        "docsLogo": "./static/logo.svg",
-        "portraitLogo": "./static/logo.svg",
-        "footerLogo": "./static/logo.svg",
-        "organization": "Microsoft MakeCode",
-        "organizationUrl": "https://makecode.com/org",
+        "logoUrl": "https://github.com/ZQ-jhon/arcade",
+        "logo": false,
+        "docsLogo": false,
+        "portraitLogo": false,
+        "footerLogo": false,
+        "organization": "strokeWithCode",
+        "organizationUrl": "https://github.com/ZQ-jhon/arcade",
         "organizationLogo": false,
         "organizationWideLogo": false,
-        "homeUrl": "https://zq-jhon.github.io",
-        "embedUrl": "https://zq-jhon.github.io",
-        "privacyUrl": "https://zq-jhon.github.io",
-        "termsOfUseUrl": "https://zq-jhon.github.io",
+        "homeUrl": "https://github.com/ZQ-jhon/arcade",
+        "embedUrl": "https://github.com/ZQ-jhon/arcade",
+        "privacyUrl": "https://github.com/ZQ-jhon/arcade",
+        "termsOfUseUrl": "https://github.com/ZQ-jhon/arcade",
         "betaUrl": false,
-        "githubUrl": "https://zq-jhon.github.io",
+        "githubUrl": "https://github.com/ZQ-jhon/arcade",
         "boardName": "ZQ-JHON",
         "socialOptions": {
             "related": false,
@@ -198,6 +198,7 @@
             "arrays": "#FF8F08",
             "functions": "#1446A0"
         },
+        "selectLanguage": true,
         "availableLocales": [
             "zh-CN",
             "en"
