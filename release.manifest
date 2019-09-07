@@ -55,13 +55,9 @@ CACHE:
 /arcade/worker.js
 /arcade/monacoworker.js
 
-# ver Sat Sep 07 2019 11:06:16 GMT+0800 (GMT+08:00)
+# ver Sat Sep 07 2019 11:58:34 GMT+0800 (GMT+08:00)
 
 # target
-/arcade/docs\static\logo.svg
-/arcade/docs\static\logo.svg
-/arcade/docs\static\logo.svg
-/arcade/docs\static\logo.svg
 /arcade/docs\static\hero.png
 
 /arcade/target.js
