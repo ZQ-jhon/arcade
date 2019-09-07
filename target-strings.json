@@ -1,11 +1,11 @@
 {
-  "About": "About",
   "Blocks Games": "Blocks Games",
   "Classics": "Classics",
-  "Docs": "Docs",
   "JavaScript Games": "JavaScript Games",
   "Lessons": "Lessons",
   "MakeCode Arcade": "MakeCode Arcade",
   "Tutorials": "Tutorials",
-  "arcade": "arcade"
+  "arcade": "arcade",
+  "关于": "关于",
+  "文档": "文档"
 }

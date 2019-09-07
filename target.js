@@ -144,7 +144,8 @@ var pxtTargetBundle = {
     ]
   },
   "simulator": {
-    "autoRun": true,
+    "autoRun": false,
+    "headless": true,
     "aspectRatio": 0.85,
     "dynamicBoardDefinition": true
   },
@@ -156,22 +157,31 @@ var pxtTargetBundle = {
     "footerLogo": "docs/static/logo.svg",
     "organization": "Microsoft MakeCode",
     "organizationUrl": "https://makecode.com/org",
-    "organizationLogo": "docs/static/Micorsoft_logo_rgb_W-white_D-square.png",
-    "organizationWideLogo": "docs/static/Micorsoft_logo_rgb_W-white_D.png",
+    "organizationLogo": false,
+    "organizationWideLogo": false,
     "homeUrl": "/arcade/",
-    "embedUrl": "https://arcade.makecode.com/",
-    "privacyUrl": "https://go.microsoft.com/fwlink/?LinkId=521839",
-    "termsOfUseUrl": "https://go.microsoft.com/fwlink/?LinkID=206977",
-    "betaUrl": "https://github.com/Microsoft/pxt-32",
-    "githubUrl": "https://github.com/Microsoft/pxt-32",
-    "boardName": "Arcade",
+    "embedUrl": "https://zq-jhon.github.io",
+    "privacyUrl": "https://zq-jhon.github.io",
+    "termsOfUseUrl": "https://zq-jhon.github.io",
+    "betaUrl": false,
+    "githubUrl": "https://zq-jhon.github.io",
+    "boardName": "ZQ-JHON",
+    "socialOptions": {
+      "related": false,
+      "discourse": false
+    },
+    "defaultLocale": "zh-CN",
+    "disableLiveTranslations": true,
+    "hideMenubarLogo": true,
+    "highContrastLogo": true,
+    "simScreenshot": false,
     "docMenu": [
       {
-        "name": "About",
+        "name": "关于",
         "path": "/arcade/docs/about"
       },
       {
-        "name": "Docs",
+        "name": "文档",
         "path": "/arcade/docs/docs"
       }
     ],
@@ -202,12 +212,17 @@ var pxtTargetBundle = {
       "arrays": "#FF8F08",
       "functions": "#1446A0"
     },
+    "availableLocales": [
+      "zh-CN",
+      "en"
+    ],
     "simAnimationEnter": "fly right in",
     "simAnimationExit": "fly right out",
     "crowdinProject": "kindscript",
     "monacoColors": {
       "editor.background": "#FFFAE7"
     },
+    "python": true,
     "TOC": [
       {
         "name": "About",

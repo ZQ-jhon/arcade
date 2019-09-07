@@ -55,15 +55,13 @@ CACHE:
 /arcade/worker.js
 /arcade/monacoworker.js
 
-# ver Sat Sep 07 2019 10:28:14 GMT+0800 (GMT+08:00)
+# ver Sat Sep 07 2019 10:48:12 GMT+0800 (GMT+08:00)
 
 # target
 /arcade/docs\static\logo.svg
 /arcade/docs\static\logo.svg
 /arcade/docs\static\logo.svg
 /arcade/docs\static\logo.svg
-/arcade/docs\static\Micorsoft_logo_rgb_W-white_D-square.png
-/arcade/docs\static\Micorsoft_logo_rgb_W-white_D.png
 /arcade/docs\static\hero.png
 
 /arcade/target.js

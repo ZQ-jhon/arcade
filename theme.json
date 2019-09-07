@@ -6,22 +6,31 @@
   "footerLogo": "docs/static/logo.svg",
   "organization": "Microsoft MakeCode",
   "organizationUrl": "https://makecode.com/org",
-  "organizationLogo": "docs/static/Micorsoft_logo_rgb_W-white_D-square.png",
-  "organizationWideLogo": "docs/static/Micorsoft_logo_rgb_W-white_D.png",
-  "homeUrl": "https://arcade.makecode.com/",
-  "embedUrl": "https://arcade.makecode.com/",
-  "privacyUrl": "https://go.microsoft.com/fwlink/?LinkId=521839",
-  "termsOfUseUrl": "https://go.microsoft.com/fwlink/?LinkID=206977",
-  "betaUrl": "https://github.com/Microsoft/pxt-32",
-  "githubUrl": "https://github.com/Microsoft/pxt-32",
-  "boardName": "Arcade",
+  "organizationLogo": false,
+  "organizationWideLogo": false,
+  "homeUrl": "https://zq-jhon.github.io",
+  "embedUrl": "https://zq-jhon.github.io",
+  "privacyUrl": "https://zq-jhon.github.io",
+  "termsOfUseUrl": "https://zq-jhon.github.io",
+  "betaUrl": false,
+  "githubUrl": "https://zq-jhon.github.io",
+  "boardName": "ZQ-JHON",
+  "socialOptions": {
+    "related": false,
+    "discourse": false
+  },
+  "defaultLocale": "zh-CN",
+  "disableLiveTranslations": true,
+  "hideMenubarLogo": true,
+  "highContrastLogo": true,
+  "simScreenshot": false,
   "docMenu": [
     {
-      "name": "About",
+      "name": "关于",
       "path": "/about"
     },
     {
-      "name": "Docs",
+      "name": "文档",
       "path": "/docs"
     }
   ],
@@ -52,12 +61,17 @@
     "arrays": "#FF8F08",
     "functions": "#1446A0"
   },
+  "availableLocales": [
+    "zh-CN",
+    "en"
+  ],
   "simAnimationEnter": "fly right in",
   "simAnimationExit": "fly right out",
   "crowdinProject": "kindscript",
   "monacoColors": {
     "editor.background": "#FFFAE7"
   },
+  "python": true,
   "TOC": [
     {
       "name": "About",
