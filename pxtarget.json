@@ -1,6 +1,6 @@
 {
     "id": "arcade",
-    "name": "arcade",
+    "name": "arcade-sample",
     "title": "MakeCode Arcade",
     "corepkg": "core",
     "cloud": {
